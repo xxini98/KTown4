@@ -308,7 +308,8 @@ legend {
 .container {
   font-family: "NanumSquareRound";
   font-weight: 400;
-  max-width: 1440px;
+  max-width: 1280px;
+  width: 1280px;
   margin: 0 auto;
   background: white;
 }
@@ -320,7 +321,7 @@ legend {
   position: relative;
   display: flex;
   align-items: stretch;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .container.is-slider .slider_left {
   position: relative;
@@ -333,8 +334,8 @@ legend {
 }
 .container.is-slider .slider_right .slide-img {
   position: relative;
-  width: 42.8571rem;
-  height: 42.8571rem;
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
   overflow: hidden;
   transform: rotateY(0deg); /* 초깃값 설정 */
@@ -374,33 +375,39 @@ legend {
   background: rgba(255, 255, 255, 0.5);
 }
 .container.is-slider .swiper-arrow {
+  position: absolute;
+  bottom: 130px;
+  left: -9px;
   display: flex;
-  margin-top: 20px;
+  margin-top: 60px;
+  color: #eee;
 }
-.container.is-slider .swiper-arrow .swiper-arrow-prev {
+.container.is-slider .swiper-arrow .swiper-button-prev {
   position: relative;
-  width: 35px;
-  height: 35px;
-  border: 1px solid #000;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #767676;
   border-radius: 50%;
+  margin-right: 40px;
+  color: #767676;
+  font-size: 16px;
+}
+.container.is-slider .swiper-arrow .swiper-button-prev::after {
+  font-weight: bold;
+  font-size: 18px;
+}
+.container.is-slider .swiper-arrow .swiper-button-next {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #767676;
+  border-radius: 50%;
+  color: #767676;
   margin-right: 50px;
 }
-.container.is-slider .swiper-arrow .swiper-arrow-prev .swiper-button-prev {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.container.is-slider .swiper-arrow .swiper-arrow-prev .swiper-button-prev::after {
-  font-size: 20px;
-  position: absolute;
-  top: 29px;
-  left: 10px;
-}
-.container.is-slider .swiper-arrow .swiper-arrow-next {
-  width: 35px;
-  height: 35px;
-  border: 1px solid #000;
-  border-radius: 50%;
+.container.is-slider .swiper-arrow .swiper-button-next::after {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .slider_info-top .slider_tagline {
@@ -497,13 +504,40 @@ legend {
 }
 
 .is-round .swiper-slide {
-  border-radius: 50%; /* 슬라이드를 원형으로 보이게 함 */
+  border-radius: 45%; /* 슬라이드를 원형으로 보이게 함 */
   overflow: hidden; /* 초과된 부분을 숨기기 위해 추가 */
   position: relative;
+  background: transparent;
 }
 
 .is-round .swiper-slide.is-photo-active .slide-img {
   transform: rotateY(180deg); /* 클릭 시 플립되는 애니메이션 설정 */
+}
+
+.eventTab-warp {
+  display: flex;
+  width: 100%;
+  height: 270px;
+  margin-top: 59px;
+  margin-bottom: 100px;
+}
+.eventTab-warp .evenTab {
+  width: 33.33%;
+  padding-right: 20px;
+}
+.eventTab-warp .evenTab img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.PreOrderWrap {
+  width: 100%;
+  height: 620px;
+  background: #fafafa;
+  padding: 80px 0 80px 200px;
 }
 
 .contents {
