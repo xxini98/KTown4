@@ -68,11 +68,23 @@
         display: flex;
         margin-top: 20px;
         .swiper-arrow-prev {
+            position: relative;
             width: 35px;
             height: 35px;
             border: 1px solid #000;
             border-radius: 50%;
             margin-right: 50px;
+            .swiper-button-prev {
+                position: absolute;
+                top: 0;
+                left: 0;
+                &::after {
+                    font-size: 20px;
+                    position: absolute;
+                    top: 29px;
+                    left: 10px;
+                }
+            }
         }
         .swiper-arrow-next {
             width: 35px;
@@ -162,9 +174,6 @@
     }
 }
 .s4 {
-    p {
-        // color: #feb161;
-    }
     button {
         color: #ffffff;
         background: #000000;

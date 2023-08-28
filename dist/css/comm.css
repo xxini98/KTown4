@@ -378,11 +378,23 @@ legend {
   margin-top: 20px;
 }
 .container.is-slider .swiper-arrow .swiper-arrow-prev {
+  position: relative;
   width: 35px;
   height: 35px;
   border: 1px solid #000;
   border-radius: 50%;
   margin-right: 50px;
+}
+.container.is-slider .swiper-arrow .swiper-arrow-prev .swiper-button-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container.is-slider .swiper-arrow .swiper-arrow-prev .swiper-button-prev::after {
+  font-size: 20px;
+  position: absolute;
+  top: 29px;
+  left: 10px;
 }
 .container.is-slider .swiper-arrow .swiper-arrow-next {
   width: 35px;
