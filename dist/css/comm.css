@@ -1,0 +1,499 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url(../fonts/NanumSquareRoundR.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url(../fonts/NanumSquareRoundL.woff) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url(../fonts/NanumSquareRoundB.woff) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url(../fonts/NanumSquareRoundEB.woff) format("woff");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+/* reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+button,
+header,
+main,
+footer,
+article {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+fieldset,
+img {
+  border: 0 none;
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+button {
+  font-size: 100%;
+  vertical-align: middle;
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+/* 뷰표트 변환시 폰트크기 자동확대 방지 */
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=search] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input:checked[type=checkbox] {
+  background-color: #666;
+  -webkit-appearance: checkbox;
+}
+
+button {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset],
+input[type=file] {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* 기본 폰트 설정 */
+/* mobile */
+body {
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  color: #222;
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* color값은 디자인가이드에 맞게사용 */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+hr {
+  display: none;
+}
+
+input[type=password] {
+  font-family: "Malgun Gothic";
+}
+
+/* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
+/* skipnavigation */
+#u-skip {
+  position: relative;
+  z-index: 3000;
+}
+
+#u-skip a {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  padding: 7px 10px 5px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0;
+}
+
+#u-skip a:focus {
+  top: 0;
+  opacity: 1;
+  z-index: 1000;
+}
+
+/* 이미지 스프라이트 */
+.img-g {
+  display: inline-block;
+  overflow: hidden;
+  background: url(../../images/comm/img-comm.png) no-repeat;
+  vertical-align: top;
+}
+
+/* 이미지 */
+/* global */
+.ir-pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0px;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir-wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+}
+
+/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.blind,
+caption,
+legend {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.tbl {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 테이블 초기화 */
+.clearfix {
+  display: block;
+  overflow: visible;
+  width: auto;
+  clear: both;
+  zoom: 1;
+}
+
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  content: "";
+}
+
+.wrap {
+  padding-top: 195px;
+}
+
+.container {
+  font-family: "NanumSquareRound";
+  font-weight: 400;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: white;
+}
+
+.container.is-slider {
+  position: relative;
+}
+.container.is-slider .slider_wrap {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.container.is-slider .slider_left {
+  position: relative;
+  width: 40%;
+}
+.container.is-slider .slider_right {
+  width: 50%;
+  height: 50%; /* 추가 */
+  border-radius: 50%; /* 추가 */
+}
+.container.is-slider .slider_right .slide-img {
+  position: relative;
+  width: 42.8571rem;
+  height: 42.8571rem;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: rotateY(0deg); /* 초깃값 설정 */
+  transition: transform 0.6s ease; /* 원형 플립 애니메이션 설정 */
+  border: 1px solid #eee;
+}
+.container.is-slider .slider_right .slide-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container.is-slider .slider_right .slide-img::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.7143rem;
+  height: 5.7143rem;
+  border-radius: 50%;
+  z-index: 2;
+  background: rgb(255, 255, 255);
+}
+.container.is-slider .slider_right .slide-img::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 7.8571rem;
+  height: 7.8571rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.container.is-slider .swiper-arrow {
+  display: flex;
+  margin-top: 20px;
+}
+.container.is-slider .swiper-arrow .swiper-arrow-prev {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+.container.is-slider .swiper-arrow .swiper-arrow-next {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.slider_info-top .slider_tagline {
+  font-weight: 700;
+  font-size: 1.4286rem;
+  color: #767676;
+  padding-bottom: 20px;
+}
+.slider_info-top .slider-title-text-artist {
+  font-weight: 900;
+  font-size: 2.8571rem;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+.slider_info-top .slider-title-text-nth {
+  font-weight: 700;
+  font-size: 2.8571rem;
+  line-height: normal;
+}
+.slider_info-top .slider-title-text-albumtit {
+  font-weight: 700;
+  font-size: 2.8571rem;
+  line-height: normal;
+  padding-bottom: 40px;
+}
+
+.slider_info-middle p {
+  color: #89d6ea;
+}
+.slider_info-middle .slider_info-text {
+  font-weight: 400;
+  font-size: 1.1429rem;
+  color: #767676;
+  padding-bottom: 50px;
+}
+
+.slider_info-bottom {
+  position: relative;
+  width: 10.7143rem;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+}
+.slider_info-bottom button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10.7143rem;
+  height: 40px;
+  border-radius: 50px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.s1 p {
+  color: #89d6ea;
+}
+.s1 button {
+  background: #89d6ea;
+}
+
+.s2 p {
+  color: #b49262;
+}
+.s2 button {
+  background: #b49262;
+}
+
+.s3 p {
+  color: #feb161;
+}
+.s3 button {
+  background: #feb161;
+}
+
+.s4 button {
+  color: #ffffff;
+  background: #000000;
+}
+
+.s5 p {
+  color: #6188d5;
+}
+.s5 button {
+  background: #6188d5;
+}
+
+.s6 p {
+  color: #ff87a0;
+}
+.s6 button {
+  background: #ff87a0;
+}
+
+.is-round .swiper-slide {
+  border-radius: 50%; /* 슬라이드를 원형으로 보이게 함 */
+  overflow: hidden; /* 초과된 부분을 숨기기 위해 추가 */
+  position: relative;
+}
+
+.is-round .swiper-slide.is-photo-active .slide-img {
+  transform: rotateY(180deg); /* 클릭 시 플립되는 애니메이션 설정 */
+}
+
+.contents {
+  height: 300px;
+}/*# sourceMappingURL=comm.css.map */

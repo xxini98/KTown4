@@ -1,0 +1,198 @@
+.wrap {
+    padding-top: 195px;
+}
+.container {
+    font-family: 'NanumSquareRound';
+    font-weight: 400;
+    max-width: 1440px;
+    margin: 0 auto;
+    // padding-top: 195px;
+    background: white;
+}
+
+.container.is-slider {
+    // display: flex;
+    position: relative;
+    .slider_wrap {
+        position: relative;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+    .slider_left {
+        position: relative;
+        width: 40%;
+    }
+    .slider_right {
+        width: 50%;
+        height: 50%; /* 추가 */
+        border-radius: 50%; /* 추가 */
+        .slide-img {
+            position: relative;
+            width: 42.8571rem;
+            height: 42.8571rem;
+            border-radius: 50%;
+            overflow: hidden;
+            transform: rotateY(0deg); /* 초깃값 설정 */
+            transition: transform 0.6s ease; /* 원형 플립 애니메이션 설정 */
+            // outline: 10px solid rgb(137, 214, 234, 0.5);
+            border: 1px solid #eee;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &::before {
+                content: '';
+                @include posXY;
+                width: 5.7143rem;
+                height: 5.7143rem;
+                border-radius: 50%;
+                z-index: 2;
+                background: rgb(255, 255, 255);
+            }
+            &::after {
+                content: '';
+                @include posXY;
+                width: 7.8571rem;
+                height: 7.8571rem;
+                border-radius: 50%;
+                background: rgb(255, 255, 255, 0.5);
+            }
+        }
+    }
+    .swiper-arrow {
+        display: flex;
+        margin-top: 20px;
+        .swiper-arrow-prev {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            margin-right: 50px;
+        }
+        .swiper-arrow-next {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #000;
+            border-radius: 50%;
+        }
+    }
+}
+
+.slider_info-top {
+    .slider_tagline {
+        font-weight: 700;
+        font-size: 1.4286rem;
+        color: #767676;
+        padding-bottom: 20px;
+    }
+    .slider-title-text-artist {
+        font-weight: 900;
+        font-size: 2.8571rem;
+        line-height: normal;
+        padding-bottom: 5px;
+    }
+    .slider-title-text-nth {
+        font-weight: 700;
+        font-size: 2.8571rem;
+        line-height: normal;
+    }
+    .slider-title-text-albumtit {
+        font-weight: 700;
+        font-size: 2.8571rem;
+        line-height: normal;
+        padding-bottom: 40px;
+    }
+}
+.slider_info-middle {
+    p {
+        color: #89d6ea;
+    }
+    .slider_info-text {
+        font-weight: 400;
+        font-size: 1.1429rem;
+        color: #767676;
+        padding-bottom: 50px;
+    }
+}
+.slider_info-bottom {
+    position: relative;
+    width: 10.7143rem;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10.7143rem;
+        height: 40px;
+        border-radius: 50px;
+        color: #000;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+.s1 {
+    p {
+        color: #89d6ea;
+    }
+    button {
+        background: #89d6ea;
+    }
+}
+.s2 {
+    p {
+        color: #b49262;
+    }
+    button {
+        background: #b49262;
+    }
+}
+.s3 {
+    p {
+        color: #feb161;
+    }
+    button {
+        background: #feb161;
+    }
+}
+.s4 {
+    p {
+        // color: #feb161;
+    }
+    button {
+        color: #ffffff;
+        background: #000000;
+    }
+}
+.s5 {
+    p {
+        color: #6188d5;
+    }
+    button {
+        background: #6188d5;
+    }
+}
+.s6 {
+    p {
+        color: #ff87a0;
+    }
+    button {
+        background: #ff87a0;
+    }
+}
+
+.is-round .swiper-slide {
+    border-radius: 50%; /* 슬라이드를 원형으로 보이게 함 */
+    overflow: hidden; /* 초과된 부분을 숨기기 위해 추가 */
+    position: relative;
+}
+
+.is-round .swiper-slide.is-photo-active .slide-img {
+    transform: rotateY(180deg); /* 클릭 시 플립되는 애니메이션 설정 */
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url(../fonts/NanumSquareRoundR.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url(../fonts/NanumSquareRoundL.woff) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url(../fonts/NanumSquareRoundB.woff) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url(../fonts/NanumSquareRoundEB.woff) format("woff");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
