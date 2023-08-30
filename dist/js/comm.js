@@ -49,4 +49,14 @@ $(function () {
             prevEl: '.swiper-arrow-prev',
         },
     });
+
+    let brandSwiper = new Swiper('.swiper.is-brand', {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        grabCursor: true,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            hide: true,
+        },
+    });
 });

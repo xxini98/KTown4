@@ -391,16 +391,10 @@
             height: 100%;
             // background: white;
             .swiper.is-preimg {
-                width: 100%;
-                height: 100%;
                 margin-top: 40px;
                 .swiper-wrapper.is-preimg {
                     display: flex;
-                    width: 100%;
-                    height: 100%;
                     .swiper-slide.is-preimg {
-                        width: 100%;
-                        height: 100%;
                         .prebx-wrap {
                             display: block;
                             width: 245px;
@@ -415,7 +409,6 @@
                                     height: 245px;
                                     border-radius: 50%;
                                     overflow: hidden;
-                                    background: lightblue;
                                     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
                                     img {
                                         width: 100%;
@@ -595,6 +588,9 @@
                 width: 23%;
                 margin-bottom: 70px;
                 .new_life_middle-info {
+                    &:hover img {
+                        transform: scale(1.05);
+                    }
                     .nl-info {
                         .nl-img {
                             width: 100%;
@@ -609,6 +605,7 @@
                                 height: 100%;
                                 border-radius: 80px;
                                 object-fit: cover;
+                                transition: transform 0.3s;
                             }
                         }
                     }
@@ -682,4 +679,376 @@
 }
 .life {
     margin-bottom: 100px;
+}
+.ktown4u_chart {
+    width: 100%;
+    background: #fafafa;
+    .chart-wrap {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        .chart-left {
+            width: 20%;
+            margin-top: 80px;
+            // margin: 80px 20px 80px 0;
+            .chart_tit {
+                font-size: 16px;
+                font-weight: 400;
+                color: #767676;
+                margin-bottom: 15px;
+            }
+        }
+        .chart-right {
+            width: 79%;
+            margin: 80px 0;
+            .chart_1-3-wrap {
+                margin: 65px 0 80px;
+                display: flex;
+                justify-content: space-between;
+                .chart_1-3 {
+                    position: relative;
+                    .chart_capsule-wrap {
+                        display: block;
+                        width: 280px;
+                        height: 480px;
+                        border-radius: 150px;
+                        background: #ffffff;
+                        .chartbx_capsule {
+                            width: 100%;
+                            height: 100%;
+                            .chartbx_capsule-img {
+                                width: 280px;
+                                height: 280px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            .chartbx_capsule-text {
+                                text-align: center;
+                                margin-top: 20px;
+                                .cca1 {
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        bottom: 10px;
+                                        left: 110px;
+                                        width: 60px;
+                                        height: 4px;
+                                        border-radius: 150px;
+                                        z-index: -1;
+                                        background: #01c3cc;
+                                    }
+                                }
+                                .cca2 {
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        bottom: 10px;
+                                        left: 100px;
+                                        width: 80px;
+                                        height: 4px;
+                                        border-radius: 150px;
+                                        z-index: -1;
+                                        background: #01c3cc;
+                                    }
+                                }
+                                .cca3 {
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        bottom: 10px;
+                                        left: 125px;
+                                        width: 30px;
+                                        height: 4px;
+                                        border-radius: 150px;
+                                        z-index: -1;
+                                        background: #01c3cc;
+                                    }
+                                }
+                                .chartbx_capsule-artist {
+                                    position: relative;
+                                    display: block;
+                                    font-size: 25px;
+                                    font-weight: 900;
+                                    margin-bottom: 5px;
+                                    color: #0062cc;
+                                    z-index: 2;
+                                }
+                                .chartbx_capsule-albumtitle {
+                                    display: block;
+                                    height: 48px;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    margin-bottom: 10px;
+                                    color: #151515;
+                                }
+                                .chartbx_capsule-release {
+                                    font-size: 14px;
+                                    color: #767676;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ch1 {
+                    &::after {
+                        content: '1st';
+                        position: absolute;
+                        top: -75px;
+                        left: 105px;
+                        font-weight: 900;
+                        font-size: 40px;
+                        color: #151515;
+                    }
+                }
+                .ch2 {
+                    &::after {
+                        content: '2nd';
+                        position: absolute;
+                        top: -75px;
+                        left: 105px;
+                        font-weight: 900;
+                        font-size: 40px;
+                        color: #151515;
+                    }
+                }
+                .ch3 {
+                    &::after {
+                        content: '3rd';
+                        position: absolute;
+                        top: -75px;
+                        left: 105px;
+                        font-weight: 900;
+                        font-size: 40px;
+                        color: #151515;
+                    }
+                }
+            }
+            .chart_4-add-wrap {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .chart_4-add {
+                    width: 49%;
+                    height: 120px;
+                    margin-bottom: 20px;
+                    border-radius: 150px;
+                    background: white;
+                    .chart_4-add-text {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        align-items: center;
+                        .chart_4-add-rank {
+                            display: block;
+                            font-size: 40px;
+                            font-weight: 900;
+                            margin: 0 30px 0 30px;
+                            color: #151515;
+                        }
+                        .chart_4-add-images-wrap {
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 10px;
+                            .chart_4-add-images {
+                                width: 70px;
+                                height: 70px;
+                                margin-right: 20px;
+                                border-radius: 10px;
+                                border: 1px solid #eeeeee;
+                                object-fit: cover;
+                                overflow: hidden;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                        .chart_4-add-contents {
+                            margin-left: 10px;
+                            .chart_4-add-artist {
+                                display: block;
+                                font-weight: 900;
+                                font-size: 16px;
+                            }
+                            .chart_4-add-album {
+                                display: block;
+                                font-weight: 700;
+                                font-size: 14px;
+                            }
+                            .chart_4-add-release {
+                                display: block;
+                                font-size: 14px;
+                                color: #767676;
+                            }
+                        }
+                    }
+                }
+                .add_text {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .ch10 {
+                    .chart_4-add-text {
+                        .chart_4-add-rank {
+                            margin: 0 15px 0 20px;
+                        }
+                    }
+                }
+                .add {
+                    .add_text {
+                        .material-icons-round {
+                            font-weight: 900;
+                            font-size: 30px;
+                            color: #0062cc;
+                            margin-right: 10px;
+                        }
+                        .add_text-add {
+                            font-weight: 900;
+                            font-size: 30px;
+                            color: #797979;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.ktown4u_offline {
+    width: 100%;
+    height: 300px;
+    background: #50bbd1;
+    margin-bottom: 80px;
+    .ktown4u_offline-wrap {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        .offline-left {
+            width: 70%;
+            padding: 30px 0 0 20px;
+            span {
+                margin-bottom: 10px;
+            }
+            .offline_tag {
+                display: block;
+                font-weight: 700;
+                font-size: 16px;
+                color: #eeeeee;
+            }
+            .offline_tit {
+                display: block;
+                font-weight: 900;
+                font-size: 40px;
+                color: #0062cc;
+            }
+            .offline_content {
+                display: block;
+                font-weight: 400;
+                font-size: 18px;
+                color: #eeeeee;
+            }
+            .offline_button {
+                width: 150px;
+                height: 40px;
+                margin-top: 20px;
+                border-radius: 20px;
+                background: white;
+                font-size: 18px;
+                font-weight: 900;
+                color: #50bbd1;
+            }
+        }
+        .offline-right {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            background: url(/images/main/coex_ai.png) no-repeat;
+            background-position: 75%, 10%;
+            background-size: 40%;
+            background-attachment: fixed;
+        }
+    }
+}
+.brandshop-wrap {
+    width: 100%;
+    margin-bottom: 85px;
+    .brandshop-header {
+        position: relative;
+        display: flex;
+        margin-bottom: 80px;
+        flex-direction: column;
+        align-items: center;
+        .brandshop-header_tagline {
+            font-size: 16px;
+            font-weight: 400;
+            color: #767676;
+            margin-bottom: 15px;
+        }
+        .brandshop-header_tagtit {
+            font-weight: 900;
+            font-size: 32px;
+            color: #0062cc;
+            margin-bottom: 20px;
+        }
+        .brandshop-header-info2 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .swiper.is-brand {
+        width: 100%;
+        .swiper-wrapper.is-brand {
+            position: relative;
+            display: flex;
+            .swiper-slide.is-brand {
+                margin-bottom: 20px;
+                .brandshop_circle {
+                    position: relative;
+                    display: block;
+                    width: 160px;
+                    height: 150px;
+                    border-radius: 50%;
+                    margin-right: 30px;
+                    overflow: hidden;
+                    border: 1px solid #dddddd;
+                    img {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        z-index: 1;
+                        transition: all 0.3s;
+                    }
+                    &:hover img {
+                        opacity: 0.1;
+                    }
+                    h2 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 160px;
+                        height: 150px;
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
