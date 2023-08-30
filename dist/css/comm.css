@@ -854,47 +854,47 @@ legend {
      object-fit: cover;
 }
 
-.newrelease {
+.new_life {
   margin-top: 100px;
 }
-.newrelease .newrelase_wrap {
+.new_life .new_life-wrap {
   width: 100%;
 }
-.newrelease .newrelase_wrap .newrelase_header {
+.new_life .new_life-wrap .new_life-header {
   position: relative;
   display: flex;
   margin-bottom: 80px;
   flex-direction: column;
   align-items: center;
 }
-.newrelease .newrelase_wrap .newrelase_header .newrelase_header_tagline {
+.new_life .new_life-wrap .new_life-header .new_life-header_tagline {
   font-size: 16px;
   font-weight: 400;
   color: #767676;
   margin-bottom: 15px;
 }
-.newrelease .newrelase_wrap .newrelase_header .newrelase_header_tagtit {
+.new_life .new_life-wrap .new_life-header .new_life-header_tagtit {
   font-weight: 900;
   font-size: 32px;
   color: #0062cc;
   margin-bottom: 20px;
 }
-.newrelease .newrelase_wrap .newrelase_header .newrelease_header-info2 {
+.new_life .new_life-wrap .new_life-header .new_life-_header-info2 {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-.newrelease .newrelase_wrap .newrelease_middle {
+.new_life .new_life-wrap .new_life_middle {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
 }
-.newrelease .newrelase_wrap .newrelease_middle .newrelease_middle-infomation {
-  width: 24%;
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation {
+  width: 23%;
   margin-bottom: 70px;
 }
-.newrelease .newrelase_wrap .newrelease_middle .newrelease_middle-infomation .newrelease_middle-info .nm-info .nm-img {
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl-info .nl-img {
   width: 100%;
   height: 300px;
   margin: 0 auto;
@@ -903,27 +903,77 @@ legend {
   border: 1px solid #dddddd;
   overflow: hidden;
 }
-.newrelease .newrelase_wrap .newrelease_middle .newrelease_middle-infomation .newrelease_middle-info .nm-info .nm-img img {
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl-info .nl-img img {
   width: 100%;
   height: 100%;
   border-radius: 80px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.newrelease .newrelase_wrap .newrelease_middle .newrelease_middle-infomation .newrelease_middle-info .nm_text .nm_text-title {
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   color: #151515;
   margin-bottom: 15px;
 }
-.newrelease .newrelase_wrap .newrelease_middle .newrelease_middle-infomation .newrelease_middle-info .nm_text .nm_text-release {
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-release {
   display: flex;
   margin-bottom: 25px;
   font-weight: 400;
   font-size: 16px;
 }
-.newrelease .newrelase_wrap .newrelease_middle .newrelease_middle-infomation .newrelease_middle-info .nm_text .nm_text-release .nm-data {
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-release .nl-data {
   color: #767676;
+}
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-release .nl-day {
+  color: #151515;
+}
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-price {
+  position: relative;
+}
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-price .nl_text-sale {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0062cc;
+}
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-price .nl_text-cost {
+  position: relative;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #767676;
+}
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-price .nl_text-cost::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 75px;
+  height: 2px;
+  background: #767676;
+}
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-price .nl_text-dis {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 900;
+  font-size: 18px;
+  color: #0062cc;
+}
+.new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-price .nl_text-dis::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  right: 0;
+  width: 40px;
+  height: 4px;
+  z-index: -1;
+  border-radius: 50px;
+  background: #01c3cc;
+}
+
+.life {
+  margin-bottom: 100px;
 }
 
 .contents {

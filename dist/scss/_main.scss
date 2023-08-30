@@ -557,46 +557,46 @@
         }
     }
 }
-.newrelease {
+.new_life {
     margin-top: 100px;
-    .newrelase_wrap {
+    .new_life-wrap {
         width: 100%;
-        .newrelase_header {
+        .new_life-header {
             position: relative;
             display: flex;
             margin-bottom: 80px;
             flex-direction: column;
             align-items: center;
-            .newrelase_header_tagline {
+            .new_life-header_tagline {
                 font-size: 16px;
                 font-weight: 400;
                 color: #767676;
                 margin-bottom: 15px;
             }
-            .newrelase_header_tagtit {
+            .new_life-header_tagtit {
                 font-weight: 900;
                 font-size: 32px;
                 color: #0062cc;
                 margin-bottom: 20px;
             }
-            .newrelease_header-info2 {
+            .new_life-_header-info2 {
                 position: absolute;
                 right: 0;
                 bottom: 0;
             }
         }
-        .newrelease_middle {
+        .new_life_middle {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
             justify-content: space-between;
 
-            .newrelease_middle-infomation {
-                width: 24%;
+            .new_life_middle-infomation {
+                width: 23%;
                 margin-bottom: 70px;
-                .newrelease_middle-info {
-                    .nm-info {
-                        .nm-img {
+                .new_life_middle-info {
+                    .nl-info {
+                        .nl-img {
                             width: 100%;
                             height: 300px;
                             margin: 0 auto;
@@ -612,20 +612,66 @@
                             }
                         }
                     }
-                    .nm_text {
-                        .nm_text-title {
+                    .nl_text {
+                        .nl_text-title {
                             font-weight: 700;
-                            font-size: 18px;
+                            font-size: 16px;
                             color: #151515;
                             margin-bottom: 15px;
                         }
-                        .nm_text-release {
+                        .nl_text-release {
                             display: flex;
                             margin-bottom: 25px;
                             font-weight: 400;
                             font-size: 16px;
-                            .nm-data {
+                            .nl-data {
                                 color: #767676;
+                            }
+                            .nl-day {
+                                color: #151515;
+                            }
+                        }
+                        .nl_text-price {
+                            position: relative;
+                            .nl_text-sale {
+                                font-weight: 700;
+                                font-size: 18px;
+                                color: #0062cc;
+                            }
+                            .nl_text-cost {
+                                position: relative;
+                                margin-left: 10px;
+                                font-weight: 400;
+                                font-size: 18px;
+                                color: #767676;
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 8px;
+                                    left: 0;
+                                    width: 75px;
+                                    height: 2px;
+                                    background: #767676;
+                                }
+                            }
+                            .nl_text-dis {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                font-weight: 900;
+                                font-size: 18px;
+                                color: #0062cc;
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    bottom: 6px;
+                                    right: 0;
+                                    width: 40px;
+                                    height: 4px;
+                                    z-index: -1;
+                                    border-radius: 50px;
+                                    background: #01c3cc;
+                                }
                             }
                         }
                     }
@@ -633,4 +679,7 @@
             }
         }
     }
+}
+.life {
+    margin-bottom: 100px;
 }
