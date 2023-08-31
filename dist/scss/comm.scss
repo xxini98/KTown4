@@ -1,7 +1,19 @@
 @charset "UTF-8";
-@import "variables", "mixin", "fonts", "reset", "main", "contents";
-
+@import 'variables', 'mixin', 'fonts', 'reset';
 // comm.scss(css) -
 // 공통요소 : header, footer, button, icon, box
+.wrap {
+    padding-top: 195px;
+    font-weight: 400;
+    font-family: 'NanumSquareRound';
+    background: $w;
+}
+.container {
+    max-width: 1280px;
+    width: 1280px;
+    margin: 0 auto;
+}
 
 // 공통
+
+@import 'main', 'contents';

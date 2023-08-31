@@ -155,7 +155,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
-  color: #222;
+  color: #000;
 }
 
 /* desktop */
@@ -303,11 +303,12 @@ legend {
 
 .wrap {
   padding-top: 195px;
+  font-weight: 400;
+  font-family: "NanumSquareRound";
+  background: #fff;
 }
 
 .container {
-  font-family: "NanumSquareRound";
-  font-weight: 400;
   max-width: 1280px;
   width: 1280px;
   margin: 0 auto;
@@ -392,10 +393,10 @@ legend {
   position: relative;
   width: 45px;
   height: 45px;
-  border: 1px solid #767676;
+  border: 1px solid #555555;
   border-radius: 50%;
   margin-right: 60px;
-  color: #767676;
+  color: #555555;
   font-size: 16px;
   cursor: pointer;
 }
@@ -411,9 +412,9 @@ legend {
   position: relative;
   width: 45px;
   height: 45px;
-  border: 1px solid #767676;
+  border: 1px solid #555555;
   border-radius: 50%;
-  color: #767676;
+  color: #555555;
   margin-right: 50px;
   cursor: pointer;
 }
@@ -429,7 +430,7 @@ legend {
 .slider_info-top .slider_tagline {
   font-weight: 700;
   font-size: 1.4286rem;
-  color: #767676;
+  color: #555555;
   padding-bottom: 20px;
 }
 .slider_info-top .slider-title-text-artist {
@@ -456,7 +457,7 @@ legend {
 .slider_info-middle .slider_info-text {
   font-weight: 400;
   font-size: 1.1429rem;
-  color: #767676;
+  color: #555555;
   padding-bottom: 50px;
 }
 
@@ -502,7 +503,7 @@ legend {
 
 .s4 button {
   color: #ffffff;
-  background: #000000;
+  background: #000;
 }
 
 .s5 p {
@@ -656,7 +657,7 @@ legend {
 .preorder .preorder-wrap .preorder-left .swiper.is-pretxt .slider-wrapper.is-pretxt .swiper-slide.is-pretxt .slider_tag {
   font-weight: 400;
   font-size: 18px;
-  color: #767676;
+  color: #555555;
   margin-bottom: 10px;
 }
 .preorder .preorder-wrap .preorder-left .swiper.is-pretxt .slider-wrapper.is-pretxt .swiper-slide.is-pretxt .slider-pre-tit {
@@ -668,13 +669,13 @@ legend {
 .preorder .preorder-wrap .preorder-left .swiper.is-pretxt .slider-wrapper.is-pretxt .swiper-slide.is-pretxt .slider_pre-info {
   font-weight: 400;
   font-size: 16px;
-  color: #767676;
+  color: #555555;
   margin-bottom: 20px;
 }
 .preorder .preorder-wrap .preorder-left .swiper.is-pretxt .slider-wrapper.is-pretxt .swiper-slide.is-pretxt .slider_pre_tagline {
   font-size: 18px;
   font-weight: 400;
-  color: #767676;
+  color: #555555;
   margin-right: 20px;
 }
 .preorder .preorder-wrap .preorder-left .swiper.is-pretxt .slider-wrapper.is-pretxt .swiper-slide.is-pretxt .slider_pre_tagline.on {
@@ -760,7 +761,7 @@ legend {
 .preorder .preorder-wrap .preorder-right .swiper.is-preimg .swiper-wrapper.is-preimg .swiper-slide.is-preimg .prebx-wrap .prebx-capsule .prebx-capsule-text .capsule-price .capsule-price-net {
   position: relative;
   font-weight: 400;
-  color: #767676;
+  color: #555555;
 }
 .preorder .preorder-wrap .preorder-right .swiper.is-preimg .swiper-wrapper.is-preimg .swiper-slide.is-preimg .prebx-wrap .prebx-capsule .prebx-capsule-text .capsule-price .capsule-price-net::after {
   content: "";
@@ -769,7 +770,7 @@ legend {
   left: 0;
   width: 75px;
   height: 2px;
-  background: #767676;
+  background: #555555;
 }
 .preorder .preorder-wrap .swiper-arrow-prev {
   position: absolute;
@@ -784,10 +785,10 @@ legend {
   position: relative;
   width: 45px;
   height: 45px;
-  border: 1px solid #767676;
+  border: 1px solid #555555;
   border-radius: 50%;
   margin-right: 40px;
-  color: #767676;
+  color: #555555;
   font-size: 16px;
   cursor: pointer;
 }
@@ -813,9 +814,9 @@ legend {
   position: relative;
   width: 45px;
   height: 45px;
-  border: 1px solid #767676;
+  border: 1px solid #555555;
   border-radius: 50%;
-  color: #767676;
+  color: #555555;
   margin-right: 50px;
   cursor: pointer;
 }
@@ -861,7 +862,7 @@ legend {
 .new_life .new_life-wrap .new_life-header .new_life-header_tagline {
   font-size: 16px;
   font-weight: 400;
-  color: #767676;
+  color: #555555;
   margin-bottom: 15px;
 }
 .new_life .new_life-wrap .new_life-header .new_life-header_tagtit {
@@ -918,7 +919,7 @@ legend {
   font-size: 16px;
 }
 .new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-release .nl-data {
-  color: #767676;
+  color: #555555;
 }
 .new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-release .nl-day {
   color: #151515;
@@ -936,7 +937,7 @@ legend {
   margin-left: 10px;
   font-weight: 400;
   font-size: 18px;
-  color: #767676;
+  color: #555555;
 }
 .new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-price .nl_text-cost::before {
   content: "";
@@ -945,7 +946,7 @@ legend {
   left: 0;
   width: 75px;
   height: 2px;
-  background: #767676;
+  background: #555555;
 }
 .new_life .new_life-wrap .new_life_middle .new_life_middle-infomation .new_life_middle-info .nl_text .nl_text-price .nl_text-dis {
   position: absolute;
@@ -986,10 +987,20 @@ legend {
   margin-top: 80px;
 }
 .ktown4u_chart .chart-wrap .chart-left .chart_tit {
+  position: relative;
   font-size: 16px;
   font-weight: 400;
-  color: #767676;
+  color: #555555;
   margin-bottom: 15px;
+}
+.ktown4u_chart .chart-wrap .chart-left .chart_tit::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 245px;
+  height: 35px;
+  background: url(/images/main/chart.svg) no-repeat 0 0;
 }
 .ktown4u_chart .chart-wrap .chart-right {
   width: 79%;
@@ -1008,7 +1019,7 @@ legend {
   width: 280px;
   height: 480px;
   border-radius: 150px;
-  background: #ffffff;
+  background: #fff;
 }
 .ktown4u_chart .chart-wrap .chart-right .chart_1-3-wrap .chart_1-3 .chart_capsule-wrap .chartbx_capsule {
   width: 100%;
@@ -1083,7 +1094,7 @@ legend {
 }
 .ktown4u_chart .chart-wrap .chart-right .chart_1-3-wrap .chart_1-3 .chart_capsule-wrap .chartbx_capsule .chartbx_capsule-text .chartbx_capsule-release {
   font-size: 14px;
-  color: #767676;
+  color: #555555;
 }
 .ktown4u_chart .chart-wrap .chart-right .chart_1-3-wrap .ch1::after {
   content: "1st";
@@ -1175,7 +1186,7 @@ legend {
 .ktown4u_chart .chart-wrap .chart-right .chart_4-add-wrap .chart_4-add .chart_4-add-text .chart_4-add-contents .chart_4-add-release {
   display: block;
   font-size: 14px;
-  color: #767676;
+  color: #555555;
 }
 .ktown4u_chart .chart-wrap .chart-right .chart_4-add-wrap .add_text {
   display: flex;
@@ -1196,63 +1207,64 @@ legend {
 .ktown4u_chart .chart-wrap .chart-right .chart_4-add-wrap .add .add_text .add_text-add {
   font-weight: 900;
   font-size: 30px;
-  color: #797979;
+  color: #555555;
 }
 
 .ktown4u_offline {
   width: 100%;
   height: 300px;
-  background: #50bbd1;
   margin-bottom: 80px;
 }
 .ktown4u_offline .ktown4u_offline-wrap {
   display: flex;
   width: 100%;
   height: 100%;
+  vertical-align: middle;
+  opacity: 1;
+  background: url(/images/main/1층-3.jpg) no-repeat;
+  background-position: -42%, 10%;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.ktown4u_offline .ktown4u_offline-wrap .offline-left {
-  width: 70%;
-  padding: 30px 0 0 20px;
+.ktown4u_offline .offline-text {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-225deg, rgba(93, 159, 255, 0.5) 0%, rgba(184, 220, 255, 0.5) 48%, rgba(107, 187, 255, 0.5) 100%);
 }
-.ktown4u_offline .ktown4u_offline-wrap .offline-left span {
+.ktown4u_offline .offline-text span {
   margin-bottom: 10px;
 }
-.ktown4u_offline .ktown4u_offline-wrap .offline-left .offline_tag {
+.ktown4u_offline .offline-text .offline_tag {
   display: block;
   font-weight: 700;
   font-size: 16px;
-  color: #eeeeee;
+  color: #151515;
 }
-.ktown4u_offline .ktown4u_offline-wrap .offline-left .offline_tit {
+.ktown4u_offline .offline-text .offline_tit {
   display: block;
   font-weight: 900;
   font-size: 40px;
   color: #0062cc;
 }
-.ktown4u_offline .ktown4u_offline-wrap .offline-left .offline_content {
+.ktown4u_offline .offline-text .offline_content {
   display: block;
   font-weight: 400;
   font-size: 18px;
-  color: #eeeeee;
+  color: #151515;
 }
-.ktown4u_offline .ktown4u_offline-wrap .offline-left .offline_button {
+.ktown4u_offline .offline-text .offline_button {
   width: 150px;
   height: 40px;
   margin-top: 20px;
   border-radius: 20px;
-  background: white;
+  background: #50bbd1;
   font-size: 18px;
   font-weight: 900;
-  color: #50bbd1;
-}
-.ktown4u_offline .ktown4u_offline-wrap .offline-right {
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-  background: url(/images/main/coex_ai.png) no-repeat;
-  background-position: 75%, 10%;
-  background-size: 40%;
-  background-attachment: fixed;
+  color: #fff;
 }
 
 .brandshop-wrap {
@@ -1269,7 +1281,7 @@ legend {
 .brandshop-wrap .brandshop-header .brandshop-header_tagline {
   font-size: 16px;
   font-weight: 400;
-  color: #767676;
+  color: #555555;
   margin-bottom: 15px;
 }
 .brandshop-wrap .brandshop-header .brandshop-header_tagtit {

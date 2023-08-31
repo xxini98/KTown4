@@ -1,14 +1,3 @@
-.wrap {
-    padding-top: 195px;
-}
-.container {
-    font-family: 'NanumSquareRound';
-    font-weight: 400;
-    max-width: 1280px;
-    width: 1280px;
-    margin: 0 auto;
-}
-
 .container.is-slider {
     // display: flex;
     position: relative;
@@ -82,10 +71,10 @@
             position: relative;
             width: 45px;
             height: 45px;
-            border: 1px solid #767676;
+            border: 1px solid $c2;
             border-radius: 50%;
             margin-right: 60px;
-            color: #767676;
+            color: $c2;
             font-size: 16px;
             cursor: pointer;
             &::after {
@@ -101,9 +90,9 @@
             position: relative;
             width: 45px;
             height: 45px;
-            border: 1px solid #767676;
+            border: 1px solid $c2;
             border-radius: 50%;
-            color: #767676;
+            color: $c2;
             margin-right: 50px;
             cursor: pointer;
 
@@ -123,7 +112,7 @@
     .slider_tagline {
         font-weight: 700;
         font-size: 1.4286rem;
-        color: #767676;
+        color: $c2;
         padding-bottom: 20px;
     }
     .slider-title-text-artist {
@@ -151,7 +140,7 @@
     .slider_info-text {
         font-weight: 400;
         font-size: 1.1429rem;
-        color: #767676;
+        color: $c2;
         padding-bottom: 50px;
     }
 }
@@ -168,7 +157,7 @@
         width: 10.7143rem;
         height: 40px;
         border-radius: 50px;
-        color: #000;
+        color: $b;
         font-size: 15px;
         font-weight: 500;
     }
@@ -200,7 +189,7 @@
 .s4 {
     button {
         color: #ffffff;
-        background: #000000;
+        background: $b;
     }
 }
 .s5 {
@@ -278,12 +267,12 @@
                 h2 {
                     font-size: 40px;
                     font-weight: 900;
-                    color: $c;
+                    color: $c1;
                 }
                 span {
                     font-size: 16px;
                     font-weight: 700;
-                    color: $c;
+                    color: $c1;
                 }
             }
         }
@@ -356,30 +345,30 @@
                         .slider_tag {
                             font-weight: 400;
                             font-size: 18px;
-                            color: #767676;
+                            color: $c2;
                             margin-bottom: 10px;
                         }
                         .slider-pre-tit {
                             font-weight: 900;
                             font-size: 36px;
-                            color: #0062cc;
+                            color: $prim1;
                             margin-bottom: 10px;
                         }
                         .slider_pre-info {
                             font-weight: 400;
                             font-size: 16px;
-                            color: #767676;
+                            color: $c2;
                             margin-bottom: 20px;
                         }
                         .slider_pre_tagline {
                             font-size: 18px;
                             font-weight: 400;
-                            color: #767676;
+                            color: $c2;
                             margin-right: 20px;
                         }
                         .slider_pre_tagline.on {
                             font-weight: 900;
-                            color: #151515;
+                            color: $c1;
                         }
                     }
                 }
@@ -427,7 +416,7 @@
                                         position: relative;
                                         font-weight: 900;
                                         font-size: 32px;
-                                        color: #0062cc;
+                                        color: $prim1;
                                         z-index: 2;
                                         &::after {
                                             content: '';
@@ -438,27 +427,27 @@
                                             height: 5px;
                                             border-radius: 10px;
                                             z-index: -1;
-                                            background: #01c3cc;
+                                            background: $prim2;
                                         }
                                     }
                                     .capsule-title {
                                         margin-top: 10px;
                                         font-weight: 400;
                                         font-size: 14px;
-                                        color: #151515;
+                                        color: $c1;
                                     }
                                     .capsule-price {
                                         margin-top: 20px;
                                         font-size: 18px;
                                         .capsule-price-nego {
                                             font-weight: 900;
-                                            color: #0062cc;
+                                            color: $prim1;
                                             margin-right: 5px;
                                         }
                                         .capsule-price-net {
                                             position: relative;
                                             font-weight: 400;
-                                            color: #767676;
+                                            color: $c2;
                                             &::after {
                                                 content: '';
                                                 position: absolute;
@@ -466,7 +455,7 @@
                                                 left: 0;
                                                 width: 75px;
                                                 height: 2px;
-                                                background: #767676;
+                                                background: $c2;
                                             }
                                         }
                                     }
@@ -489,10 +478,10 @@
                 position: relative;
                 width: 45px;
                 height: 45px;
-                border: 1px solid #767676;
+                border: 1px solid $c2;
                 border-radius: 50%;
                 margin-right: 40px;
-                color: #767676;
+                color: $c2;
                 font-size: 16px;
                 cursor: pointer;
                 &::after {
@@ -518,9 +507,9 @@
                 position: relative;
                 width: 45px;
                 height: 45px;
-                border: 1px solid #767676;
+                border: 1px solid $c2;
                 border-radius: 50%;
-                color: #767676;
+                color: $c2;
                 margin-right: 50px;
                 cursor: pointer;
                 &::after {
@@ -539,7 +528,7 @@
 .ad_kt4 {
     width: 100%;
     height: 100px;
-    background: #01c3cc;
+    background: $prim2;
     .ad_kt4_img {
         width: 100%;
         height: 100%;
@@ -563,13 +552,13 @@
             .new_life-header_tagline {
                 font-size: 16px;
                 font-weight: 400;
-                color: #767676;
+                color: $c2;
                 margin-bottom: 15px;
             }
             .new_life-header_tagtit {
                 font-weight: 900;
                 font-size: 32px;
-                color: #0062cc;
+                color: $prim1;
                 margin-bottom: 20px;
             }
             .new_life-_header-info2 {
@@ -613,7 +602,7 @@
                         .nl_text-title {
                             font-weight: 700;
                             font-size: 16px;
-                            color: #151515;
+                            color: $c1;
                             margin-bottom: 15px;
                         }
                         .nl_text-release {
@@ -622,10 +611,10 @@
                             font-weight: 400;
                             font-size: 16px;
                             .nl-data {
-                                color: #767676;
+                                color: $c2;
                             }
                             .nl-day {
-                                color: #151515;
+                                color: $c1;
                             }
                         }
                         .nl_text-price {
@@ -633,14 +622,14 @@
                             .nl_text-sale {
                                 font-weight: 700;
                                 font-size: 18px;
-                                color: #0062cc;
+                                color: $prim1;
                             }
                             .nl_text-cost {
                                 position: relative;
                                 margin-left: 10px;
                                 font-weight: 400;
                                 font-size: 18px;
-                                color: #767676;
+                                color: $c2;
                                 &::before {
                                     content: '';
                                     position: absolute;
@@ -648,7 +637,7 @@
                                     left: 0;
                                     width: 75px;
                                     height: 2px;
-                                    background: #767676;
+                                    background: $c2;
                                 }
                             }
                             .nl_text-dis {
@@ -657,7 +646,7 @@
                                 right: 0;
                                 font-weight: 900;
                                 font-size: 18px;
-                                color: #0062cc;
+                                color: $prim1;
                                 &::after {
                                     content: '';
                                     position: absolute;
@@ -667,7 +656,7 @@
                                     height: 4px;
                                     z-index: -1;
                                     border-radius: 50px;
-                                    background: #01c3cc;
+                                    background: $prim2;
                                 }
                             }
                         }
@@ -691,12 +680,21 @@
         .chart-left {
             width: 20%;
             margin-top: 80px;
-            // margin: 80px 20px 80px 0;
             .chart_tit {
+                position: relative;
                 font-size: 16px;
                 font-weight: 400;
-                color: #767676;
+                color: $c2;
                 margin-bottom: 15px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 30px;
+                    left: 0;
+                    width: 245px;
+                    height: 35px;
+                    background: url(/images/main/chart.svg) no-repeat 0 0;
+                }
             }
         }
         .chart-right {
@@ -713,7 +711,7 @@
                         width: 280px;
                         height: 480px;
                         border-radius: 150px;
-                        background: #ffffff;
+                        background: $w;
                         .chartbx_capsule {
                             width: 100%;
                             height: 100%;
@@ -742,7 +740,7 @@
                                         height: 4px;
                                         border-radius: 150px;
                                         z-index: -1;
-                                        background: #01c3cc;
+                                        background: $prim2;
                                     }
                                 }
                                 .cca2 {
@@ -755,7 +753,7 @@
                                         height: 4px;
                                         border-radius: 150px;
                                         z-index: -1;
-                                        background: #01c3cc;
+                                        background: $prim2;
                                     }
                                 }
                                 .cca3 {
@@ -768,7 +766,7 @@
                                         height: 4px;
                                         border-radius: 150px;
                                         z-index: -1;
-                                        background: #01c3cc;
+                                        background: $prim2;
                                     }
                                 }
                                 .chartbx_capsule-artist {
@@ -777,7 +775,7 @@
                                     font-size: 25px;
                                     font-weight: 900;
                                     margin-bottom: 5px;
-                                    color: #0062cc;
+                                    color: $prim1;
                                     z-index: 2;
                                 }
                                 .chartbx_capsule-albumtitle {
@@ -786,11 +784,11 @@
                                     font-weight: 700;
                                     font-size: 16px;
                                     margin-bottom: 10px;
-                                    color: #151515;
+                                    color: $c1;
                                 }
                                 .chartbx_capsule-release {
                                     font-size: 14px;
-                                    color: #767676;
+                                    color: $c2;
                                 }
                             }
                         }
@@ -804,7 +802,7 @@
                         left: 105px;
                         font-weight: 900;
                         font-size: 40px;
-                        color: #151515;
+                        color: $c1;
                     }
                 }
                 .ch2 {
@@ -815,7 +813,7 @@
                         left: 105px;
                         font-weight: 900;
                         font-size: 40px;
-                        color: #151515;
+                        color: $c1;
                     }
                 }
                 .ch3 {
@@ -826,7 +824,7 @@
                         left: 105px;
                         font-weight: 900;
                         font-size: 40px;
-                        color: #151515;
+                        color: $c1;
                     }
                 }
             }
@@ -851,7 +849,7 @@
                             font-size: 40px;
                             font-weight: 900;
                             margin: 0 30px 0 30px;
-                            color: #151515;
+                            color: $c1;
                         }
                         .chart_4-add-images-wrap {
                             width: 70px;
@@ -887,7 +885,7 @@
                             .chart_4-add-release {
                                 display: block;
                                 font-size: 14px;
-                                color: #767676;
+                                color: $c2;
                             }
                         }
                     }
@@ -911,13 +909,13 @@
                         .material-icons-round {
                             font-weight: 900;
                             font-size: 30px;
-                            color: #0062cc;
+                            color: $prim1;
                             margin-right: 10px;
                         }
                         .add_text-add {
                             font-weight: 900;
                             font-size: 30px;
-                            color: #797979;
+                            color: $c2;
                         }
                     }
                 }
@@ -928,55 +926,61 @@
 .ktown4u_offline {
     width: 100%;
     height: 300px;
-    background: #50bbd1;
     margin-bottom: 80px;
     .ktown4u_offline-wrap {
         display: flex;
         width: 100%;
         height: 100%;
-        .offline-left {
-            width: 70%;
-            padding: 30px 0 0 20px;
-            span {
-                margin-bottom: 10px;
-            }
-            .offline_tag {
-                display: block;
-                font-weight: 700;
-                font-size: 16px;
-                color: #eeeeee;
-            }
-            .offline_tit {
-                display: block;
-                font-weight: 900;
-                font-size: 40px;
-                color: #0062cc;
-            }
-            .offline_content {
-                display: block;
-                font-weight: 400;
-                font-size: 18px;
-                color: #eeeeee;
-            }
-            .offline_button {
-                width: 150px;
-                height: 40px;
-                margin-top: 20px;
-                border-radius: 20px;
-                background: white;
-                font-size: 18px;
-                font-weight: 900;
-                color: #50bbd1;
-            }
+        vertical-align: middle;
+        opacity: 1;
+        background: url(/images/main/1층-3.jpg) no-repeat;
+        background-position: -42%, 10%;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .offline-text {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(
+            -225deg,
+            rgb(93, 159, 255, 0.5) 0%,
+            rgb(184, 220, 255, 0.5) 48%,
+            rgb(107, 187, 255, 0.5) 100%
+        );
+        span {
+            margin-bottom: 10px;
         }
-        .offline-right {
-            width: 100%;
-            height: 100%;
-            vertical-align: middle;
-            background: url(/images/main/coex_ai.png) no-repeat;
-            background-position: 75%, 10%;
-            background-size: 40%;
-            background-attachment: fixed;
+        .offline_tag {
+            display: block;
+            font-weight: 700;
+            font-size: 16px;
+            color: $c1;
+        }
+        .offline_tit {
+            display: block;
+            font-weight: 900;
+            font-size: 40px;
+            color: $prim1;
+        }
+        .offline_content {
+            display: block;
+            font-weight: 400;
+            font-size: 18px;
+            color: $c1;
+        }
+        .offline_button {
+            width: 150px;
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 20px;
+            background: #50bbd1;
+            font-size: 18px;
+            font-weight: 900;
+            color: $w;
         }
     }
 }
@@ -992,13 +996,13 @@
         .brandshop-header_tagline {
             font-size: 16px;
             font-weight: 400;
-            color: #767676;
+            color: $c2;
             margin-bottom: 15px;
         }
         .brandshop-header_tagtit {
             font-weight: 900;
             font-size: 32px;
-            color: #0062cc;
+            color: $prim1;
             margin-bottom: 20px;
         }
         .brandshop-header-info2 {
