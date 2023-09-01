@@ -1346,6 +1346,124 @@ legend {
   top: 108px;
 }
 
-.contents {
-  height: 300px;
+.itemview-main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.itemview-main .itemview-left {
+  width: 50%;
+}
+.itemview-main .itemview-left .itemalbum-images {
+  width: 640px;
+  height: 640px;
+  border-radius: 40px;
+  border: 1px solid #dddddd;
+  overflow: hidden;
+}
+.itemview-main .itemview-left .itemalbum-images img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.itemview-main .itemview-right {
+  width: 45%;
+}
+.itemview-main .itemview-right .kt4_prod_info {
+  padding: 25px 0;
+  border-bottom: 2px solid #eee;
+}
+.itemview-main .itemview-right .info-tit .info-title .agency {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #555555;
+}
+.itemview-main .itemview-right .info-tit .info-title .info-album {
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #151515;
+}
+.itemview-main .itemview-right .info-tit .info-title .info-albumtit {
+  font-weight: 400;
+  font-size: 16px;
+  color: #0062cc;
+}
+.itemview-main .itemview-right .info-price {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+.itemview-main .itemview-right .info-price .discount_rate {
+  font-size: 26px;
+  font-weight: 900;
+  margin-right: 10px;
+  color: #0062cc;
+}
+.itemview-main .itemview-right .info-price .final_price {
+  font-weight: 900;
+  font-size: 26px;
+  margin-right: 20px;
+  color: #151515;
+}
+.itemview-main .itemview-right .info-price .price_origin {
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  color: #555555;
+}
+.itemview-main .itemview-right .info-price .price_origin::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #555555;
+}
+.itemview-main .itemview-right .info-details .details-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+.itemview-main .itemview-right .info-details .info-detail-tit {
+  width: 105px;
+  margin-right: 50px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #555555;
+}
+.itemview-main .itemview-right .info-details .info-detail-text {
+  font-weight: 400;
+  font-size: 15px;
+  color: #151515;
+}
+.itemview-main .itemview-right .info-details .delivery-txt1 {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  color: #151515;
+}
+.itemview-main .itemview-right .info-details .delivery-txt2 {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  color: #151515;
+}
+.itemview-main .itemview-right .info-details .delivery-txt3 {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  color: #555555;
+}
+.itemview-main .itemview-right .info-details .deliveryinfo-txt1 {
+  display: block;
+}
+.itemview-main .itemview-right .info-details .deliveryinfo-txt2 {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  color: #555555;
 }/*# sourceMappingURL=comm.css.map */
