@@ -25,8 +25,7 @@
             overflow: hidden;
             transform: rotateY(0deg); /* 초깃값 설정 */
             transition: transform 0.6s ease; /* 원형 플립 애니메이션 설정 */
-            // outline: 10px solid rgb(137, 214, 234, 0.5);
-            border: 1px solid #eee;
+            border: 1px solid $gray-e;
             img {
                 position: absolute;
                 top: 0;
@@ -43,7 +42,7 @@
                 height: 5.7143rem;
                 border-radius: 50%;
                 z-index: 2;
-                background: rgb(255, 255, 255);
+                background: $w;
             }
             &::after {
                 content: '';
@@ -51,7 +50,7 @@
                 width: 7.8571rem;
                 height: 7.8571rem;
                 border-radius: 50%;
-                background: rgb(255, 255, 255, 0.5);
+                background: rgb($w, 0.5);
             }
             @keyframes rotate_image {
                 100% {
@@ -66,7 +65,7 @@
         left: 0px;
         display: flex;
         margin-top: 60px;
-        color: #eee;
+        color: $gray-e;
         .swiper-main-prev {
             position: relative;
             width: 45px;
@@ -134,9 +133,6 @@
     }
 }
 .slider_info-middle {
-    p {
-        color: #89d6ea;
-    }
     .slider_info-text {
         font-weight: 400;
         font-size: 1.1429rem;
@@ -186,12 +182,12 @@
     }
     button {
         background: #a45723;
-        color: #ffffff;
+        color: $w;
     }
 }
 .s4 {
     button {
-        color: #ffffff;
+        color: $w;
         background: $b;
     }
 }
@@ -201,7 +197,7 @@
     }
     button {
         background: #36579b;
-        color: #ffffff;
+        color: $w;
     }
 }
 .s6 {
@@ -210,7 +206,7 @@
     }
     button {
         background: #b33d78;
-        color: #ffffff;
+        color: $w;
     }
 }
 
@@ -327,7 +323,7 @@
 .preorder {
     width: 100%;
     height: 600px;
-    background: #fafafa;
+    background: $gray-f;
     .preorder-wrap {
         display: flex;
         width: 100%;
@@ -337,7 +333,6 @@
             position: relative;
             width: 25%;
             height: 100%;
-            // background: white;
             .swiper.is-pretxt {
                 width: 100%;
                 height: 100%;
@@ -383,7 +378,6 @@
             position: relative;
             width: 70%;
             height: 100%;
-            // background: white;
             .swiper.is-preimg {
                 margin-top: 40px;
                 .swiper-wrapper.is-preimg {
@@ -397,7 +391,7 @@
                                 width: 100%;
                                 height: 100%;
                                 border-radius: 150px;
-                                background: white;
+                                background: $w;
                                 .prebx-capsule-img {
                                     width: 245px;
                                     height: 245px;
@@ -476,7 +470,7 @@
             bottom: 280px;
             left: -390px;
             display: flex;
-            color: #eee;
+            color: $gray-e;
             cursor: pointer;
             z-index: 1;
             .swiper-pre-prev {
@@ -505,7 +499,7 @@
             bottom: 280px;
             left: -300px;
             display: flex;
-            color: #eee;
+            color: $gray-e;
             cursor: pointer;
             z-index: 1;
             .swiper-pre-next {
@@ -587,7 +581,7 @@
                             margin: 0 auto;
                             border-radius: 80px;
                             margin-bottom: 15px;
-                            border: 1px solid #dddddd;
+                            border: 1px solid $gray-d;
                             overflow: hidden;
                             img {
                                 width: 100%;
@@ -677,7 +671,7 @@
 }
 .ktown4u_chart {
     width: 100%;
-    background: #fafafa;
+    background: $gray-f;
     .chart-wrap {
         display: flex;
         width: 100%;
@@ -1028,7 +1022,7 @@
                     border-radius: 50%;
                     margin-right: 30px;
                     overflow: hidden;
-                    border: 1px solid #dddddd;
+                    border: 1px solid $gray-d;
                     img {
                         position: relative;
                         width: 100%;

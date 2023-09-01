@@ -363,7 +363,7 @@ legend {
   height: 5.7143rem;
   border-radius: 50%;
   z-index: 2;
-  background: rgb(255, 255, 255);
+  background: #fff;
 }
 .container.is-slider .slider_right .slide-img::after {
   content: "";
@@ -451,9 +451,6 @@ legend {
   padding-bottom: 40px;
 }
 
-.slider_info-middle p {
-  color: #89d6ea;
-}
 .slider_info-middle .slider_info-text {
   font-weight: 400;
   font-size: 1.1429rem;
@@ -501,11 +498,11 @@ legend {
 }
 .s3 button {
   background: #a45723;
-  color: #ffffff;
+  color: #fff;
 }
 
 .s4 button {
-  color: #ffffff;
+  color: #fff;
   background: #000;
 }
 
@@ -514,7 +511,7 @@ legend {
 }
 .s5 button {
   background: #36579b;
-  color: #ffffff;
+  color: #fff;
 }
 
 .s6 p {
@@ -522,7 +519,7 @@ legend {
 }
 .s6 button {
   background: #b33d78;
-  color: #ffffff;
+  color: #fff;
 }
 
 .is-round .swiper-slide {
@@ -707,7 +704,7 @@ legend {
   width: 100%;
   height: 100%;
   border-radius: 150px;
-  background: white;
+  background: #fff;
 }
 .preorder .preorder-wrap .preorder-right .swiper.is-preimg .swiper-wrapper.is-preimg .swiper-slide.is-preimg .prebx-wrap .prebx-capsule .prebx-capsule-img {
   width: 245px;
