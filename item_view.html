@@ -52,14 +52,26 @@
         <script defer src="./dist/js/comm.js"></script>
     </head>
     <body>
-        <div class="wrap">
-            <section class="itemview-main container">
+        <div class="wrap container">
+            <section class="itemview-main">
                 <div class="itemview-left">
                     <div class="itemalbum-images">
                         <img
                             src="./images/contents/itemview_newjeans_album.png"
                             alt="NEWJEANS(뉴진스) - 2ND EP [GET UP] [THE POWERPUFF GIRLS X NJ BOX VER] (랜덤버전)"
                         />
+                    </div>
+                    <div class="artist_goto">
+                        <a href="#" class="artist_goto-wrap">
+                            <div class="artist_goto-image">
+                                <img
+                                    src="./images/contents/newjeans_goto.jpg"
+                                    alt="NEWJEANS(뉴진스) 스토어 바로가기"
+                                />
+                            </div>
+                            <span class="artist_goto-text">NEWJEANS(뉴진스) 스토어 바로가기</span>
+                            <i class="fa-solid fa-angle-right artist_goto-arrow"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="itemview-right">
@@ -92,15 +104,9 @@
                                 <dl class="details-box info-delivery">
                                     <dt class="info-detail-tit info-deliverycharge">배송비</dt>
                                     <dd class="info-deliverycharge-txt">
-                                        <p>
-                                            <span class="delivery-txt1">Ktown4u 조건배송</span>
-                                            <span class="delivery-txt2"
-                                                >2,000원 (20,000원 이상 구매 시 무료)</span
-                                            >
-                                            <span class="delivery-txt3"
-                                                >도서 산간 지역 추가 요금 있음</span
-                                            >
-                                        </p>
+                                        Ktown4u 조건배송 <br />
+                                        2,000원 (20,000원 이상 구매 시 무료)
+                                        <p class="delivery-txt3">도서 산간 지역 추가 요금 있음</p>
                                     </dd>
                                 </dl>
                                 <dl class="details-box info-deliveryinfo">
@@ -120,16 +126,54 @@
                             <div class="kt4_prod_info count-wrap">
                                 <div class="count-left">
                                     <span class="count_button-wrap">
-                                        <button></button>
-                                        <input type="text" />
-                                        <button></button>
+                                        <button id="decrease">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <input
+                                            type="number"
+                                            value="1"
+                                            min="1"
+                                            max="100"
+                                            step="1"
+                                            id="my-input"
+                                        />
+                                        <button id="increase">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
                                     </span>
                                 </div>
-                                <div class="count-right"></div>
+                                <div class="count-right">
+                                    <span class="val">18,600</span>
+                                    <span class="unit">원</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="product_info_down"></div>
+                        <div class="product_info_down">
+                            <div class="kt4_info-total-price">
+                                <span class="kt4_info-total">
+                                    총
+                                    <span class="cart-count">1</span>
+                                    개
+                                </span>
+                                <span class="kt4_info-price">
+                                    <span class="val">18,600</span>
+                                    <span class="unit">원</span>
+                                </span>
+                            </div>
+                            <div class="kt4_product_btn_area">
+                                <button class="gotocart">장바구니</button>
+                                <button class="buy">구매하기</button>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </section>
+            <section class="kt4_associate-wrap">
+                <div class="kt4_associate-image">
+                    <img src="./images/contents/제휴사.svg" alt="" />
+                    <!-- <img src="./images/contents/ASSOCIATE_KT4.png" alt="ktown4u" />
+                    <img src="./images/contents/ASSOICATE_hanter.svg" alt="hanter_chart" />
+                    <img src="./images/contents/ASSOICATE_circle.svg" alt="circle_chart" /> -->
                 </div>
             </section>
         </div>

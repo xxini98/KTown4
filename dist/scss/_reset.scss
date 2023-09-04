@@ -84,36 +84,37 @@ input[type='text'],
 input[type='password'],
 input[type='submit'],
 input[type='search'] {
-    -webkit-appearance: none;
+    appearance: none;
     border-radius: 0;
 }
 input:checked[type='checkbox'] {
     background-color: #666;
-    -webkit-appearance: checkbox;
+    appearance: checkbox;
 }
 button {
-    -webkit-appearance: button;
+    appearance: button;
     border-radius: 0;
 }
 input[type='button'],
 input[type='submit'],
 input[type='reset'],
 input[type='file'] {
-    -webkit-appearance: button;
+    appearance: button;
     border-radius: 0;
 }
 input[type='search']::-webkit-search-cancel-button {
-    -webkit-appearance: none;
+    appearance: none;
 }
 
 /* 기본 폰트 설정 */
 /* mobile */
 body {
-    background: #fff;
-    font-size: 14px;
+    background: $w;
+    font-size: 15px;
     line-height: 1.5;
-    font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', sans-serif;
-    color: $b;
+    font-weight: 400;
+    font-family: 'NanumSquareRound', 'Malgun Gothic', '맑은 고딕', sans-serif;
+    color: $c1;
 }
 /* desktop */
 @media screen and (min-width: 1280px) {
