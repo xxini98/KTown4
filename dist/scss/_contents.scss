@@ -1,251 +1,322 @@
 .itemview-main {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding-bottom: 60px;
-  border-bottom: 2px solid $gray-e;
-}
-.itemview-left {
-  position: relative;
-  width: 50%;
-  .itemalbum-images {
-    width: 640px;
-    height: 640px;
-    border-radius: 40px;
-    border: 1px solid $gray-d;
-    overflow: hidden;
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 40px;
-      object-fit: cover;
-    }
-  }
-  .artist_goto {
-    .artist_goto-wrap {
-      display: flex;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 60px;
-      align-items: center;
-      border: 1px solid $gray-e;
-      border-radius: 30px;
-      .artist_goto-image {
-        width: 40px;
-        height: 40px;
-        margin-left: 20px;
-        border-radius: 50%;
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-      .artist_goto-text {
-        margin-left: 30px;
-      }
-      .artist_goto-arrow {
-        margin-left: 280px;
-        color: $gray-9;
-      }
-    }
-  }
-}
-.itemview-right {
-  width: 45%;
-  .kt4_prod_info {
-    padding: 25px 0;
-    border-bottom: 2px solid $gray-e;
-  }
-  .info-tit {
-    .info-title {
-      .agency {
-        font-size: 14px;
-        margin-bottom: 10px;
-        color: $c2;
-      }
-      .info-album {
-        font-weight: 900;
-        font-size: 20px;
-        margin-bottom: 10px;
-      }
-      .info-albumtit {
-        font-size: 16px;
-        color: $prim1;
-      }
-    }
-  }
-  .info-price {
-    display: flex;
-    align-items: center;
-    padding: 25px 0;
-    .discount_rate {
-      font-size: 26px;
-      font-weight: 900;
-      margin-right: 10px;
-      color: $prim1;
-    }
-    .final_price {
-      font-weight: 900;
-      font-size: 26px;
-      margin-right: 20px;
-    }
-    .price_origin {
-      position: relative;
-      font-size: 18px;
-      color: $c2;
-      &::after {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 0;
-        right: 0;
-        height: 1px;
-        background: $c2;
-      }
-    }
-  }
-  .info-details {
-    .details-box {
-      display: flex;
-      margin-bottom: 20px;
-    }
-    .info-detail-tit {
-      width: 105px;
-      margin-right: 50px;
-      color: $c2;
-    }
-    .delivery-txt1 {
-      display: block;
-    }
-    .delivery-txt2 {
-      display: block;
-    }
-    .delivery-txt3 {
-      display: block;
-      color: $c2;
-    }
-    .deliveryinfo-txt1 {
-      display: block;
-    }
-    .deliveryinfo-txt2 {
-      display: block;
-      color: $c2;
-    }
-  }
-  .count-wrap {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    .count-left {
-      width: 30%;
-      .count_button-wrap {
+    padding-bottom: 60px;
+    border-bottom: 2px solid $gray-e;
+}
+.itemview-left {
+    position: relative;
+    width: 50%;
+    .itemalbum-images {
+        width: 640px;
+        height: 640px;
+        border-radius: 40px;
+        border: 1px solid $gray-d;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 40px;
+            object-fit: cover;
+        }
+    }
+    .artist_goto {
+        .artist_goto-wrap {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 60px;
+            align-items: center;
+            border: 1px solid $gray-e;
+            border-radius: 30px;
+            .artist_goto-image {
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .artist_goto-text {
+                margin-left: 30px;
+            }
+            .artist_goto-arrow {
+                margin-left: 280px;
+                color: $gray-9;
+            }
+        }
+    }
+}
+.itemview-right {
+    width: 45%;
+    .kt4_prod_info {
+        padding: 25px 0;
+        border-bottom: 2px solid $gray-e;
+    }
+    .info-tit {
+        .info-title {
+            .agency {
+                font-size: 14px;
+                margin-bottom: 10px;
+                color: $c2;
+            }
+            .info-album {
+                font-weight: 900;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .info-albumtit {
+                font-size: 16px;
+                color: $prim1;
+            }
+        }
+    }
+    .info-price {
         display: flex;
-        width: 137px;
-        border: 1px solid $gray-e;
-        border-radius: 50px;
-        input[type="number"] {
-          width: 50px;
-          text-align: center;
-          font-size: 20px;
-          border: none;
+        align-items: center;
+        padding: 25px 0;
+        .discount_rate {
+            font-size: 26px;
+            font-weight: 900;
+            margin-right: 10px;
+            color: $prim1;
         }
-        input[type="number"]::-webkit-outer-spin-button,
-        input[type="number"]::-webkit-inner-spin-button {
-          -webkit-appearance: none;
-          margin: 0;
+        .final_price {
+            font-weight: 900;
+            font-size: 26px;
+            margin-right: 20px;
         }
-        button {
-          border: none;
-          padding: 15px 15px;
-          cursor: pointer;
+        .price_origin {
+            position: relative;
+            font-size: 18px;
+            color: $c2;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: $c2;
+            }
         }
-        #decrease {
-          border-radius: 50px 0 0 50px;
-        }
-        #increase {
-          border-radius: 0 50px 50px 0;
-        }
-      }
     }
-  }
-  .count-right {
-    font-size: 20px;
-    .val {
-      font-weight: 700;
-    }
-  }
-  .product_info_down {
-    width: 100%;
-    .kt4_info-total-price {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 20px;
-      font-weight: 700;
-      padding: 20px 0 80px 0;
-      .cart-count {
-        color: $prim1;
-      }
-      .kt4_info-price {
-        .val {
-          font-weight: 900;
-          font-size: 22px;
+    .info-details {
+        .details-box {
+            display: flex;
+            margin-bottom: 20px;
         }
-        .unit {
-          font-weight: 900;
-          font-size: 18px;
+        .info-detail-tit {
+            width: 105px;
+            margin-right: 50px;
+            color: $c2;
         }
-      }
+        .delivery-txt1 {
+            display: block;
+        }
+        .delivery-txt2 {
+            display: block;
+        }
+        .delivery-txt3 {
+            display: block;
+            color: $c2;
+        }
+        .deliveryinfo-txt1 {
+            display: block;
+        }
+        .deliveryinfo-txt2 {
+            display: block;
+            color: $c2;
+        }
     }
-    .kt4_product_btn_area {
-      display: flex;
-      justify-content: space-between;
-      button {
-        width: 48%;
-        height: 60px;
-        border-radius: 30px;
-        font-weight: 900;
+    .count-wrap {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        .count-left {
+            width: 30%;
+            .count_button-wrap {
+                display: flex;
+                width: 137px;
+                border: 1px solid $gray-e;
+                border-radius: 50px;
+                input[type='number'] {
+                    width: 50px;
+                    text-align: center;
+                    font-size: 20px;
+                    border: none;
+                }
+                input[type='number']::-webkit-outer-spin-button,
+                input[type='number']::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                button {
+                    border: none;
+                    padding: 15px 15px;
+                    cursor: pointer;
+                }
+                #decrease {
+                    border-radius: 50px 0 0 50px;
+                }
+                #increase {
+                    border-radius: 0 50px 50px 0;
+                }
+            }
+        }
+    }
+    .count-right {
         font-size: 20px;
-      }
-      .gotocart {
-        border: 1px solid $prim1;
-      }
-      .buy {
-        background: $prim1;
-        color: $w;
-      }
+        .val {
+            font-weight: 700;
+        }
     }
-  }
+    .product_info_down {
+        width: 100%;
+        .kt4_info-total-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 20px 0 80px 0;
+            .cart-count {
+                color: $prim1;
+            }
+            .kt4_info-price {
+                .val {
+                    font-weight: 900;
+                    font-size: 22px;
+                }
+                .unit {
+                    font-weight: 900;
+                    font-size: 18px;
+                }
+            }
+        }
+        .kt4_product_btn_area {
+            display: flex;
+            justify-content: space-between;
+            .kt4_button {
+                width: 48%;
+                line-height: 60px;
+                text-align: center;
+                border-radius: 30px;
+                font-weight: 900;
+                font-size: 20px;
+            }
+            .gotocart {
+                border: 1px solid $prim1;
+            }
+            .buy {
+                background: $prim1;
+                color: $w;
+            }
+        }
+    }
 }
 
 .kt4_associate-wrap {
-  width: 100%;
-  text-align: center;
-  padding-bottom: 60px;
-  border-bottom: 2px solid $gray-e;
-  .kt4_associate-image {
-    display: flex;
-    width: 60%;
-    height: 80px;
-    justify-content: space-evenly;
-    margin: 60px auto 50px;
-    li {
-      width: 20%;
-      height: 100%;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
+    width: 100%;
+    text-align: center;
+    padding-bottom: 60px;
+    border-bottom: 2px solid $gray-e;
+    .kt4_associate-image {
+        display: flex;
+        width: 60%;
+        height: 80px;
+        justify-content: space-evenly;
+        margin: 60px auto 50px;
+        li {
+            width: 20%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
     }
-  }
-  .kt4_associate-text {
-    font-weight: 700;
-  }
+    .kt4_associate-text {
+        font-weight: 700;
+        font-size: 15px;
+    }
+}
+.info-wrap {
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+    padding: 60px;
+    border-radius: 81px;
+    border: 1px solid $gray-e;
+}
+.detail_info-tit {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 22px;
+}
+.kt4_all_info-wrap {
+    width: 100%;
+    margin-top: 60px;
+    .kt4_delivery_information {
+        width: 100%;
+        height: 100px;
+        padding: 20px 65px;
+        margin-bottom: 60px;
+        border-radius: 80px;
+        background: $gray-e;
+        .kt4_delivery-info {
+            .delivery-tit {
+                display: block;
+                font-weight: 900;
+                font-size: 20px;
+            }
+            .deliveryinfo {
+                display: block;
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .album_info {
+        margin-bottom: 60px;
+    }
+    .album_info-1 {
+        .album-artistinfo {
+            display: block;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+    }
+    .album_info-3 {
+        margin-bottom: 0;
+    }
+}
+.album_details_images {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.kt4_cont-wrap {
+    margin-bottom: 60px;
+    .kt4_cont {
+        margin-bottom: 60px;
+        .kt4_cont-return {
+            margin-bottom: 0;
+        }
+    }
+    .kt4_packing {
+        text-align: center;
+    }
 }

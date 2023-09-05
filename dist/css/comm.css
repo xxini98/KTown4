@@ -1561,9 +1561,10 @@ legend {
   display: flex;
   justify-content: space-between;
 }
-.itemview-right .product_info_down .kt4_product_btn_area button {
+.itemview-right .product_info_down .kt4_product_btn_area .kt4_button {
   width: 48%;
-  height: 60px;
+  line-height: 60px;
+  text-align: center;
   border-radius: 30px;
   font-weight: 900;
   font-size: 20px;
@@ -1601,4 +1602,73 @@ legend {
 }
 .kt4_associate-wrap .kt4_associate-text {
   font-weight: 700;
+  font-size: 15px;
+}
+
+.info-wrap {
+  width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+  padding: 60px;
+  border-radius: 81px;
+  border: 1px solid #eee;
+}
+
+.detail_info-tit {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.kt4_all_info-wrap {
+  width: 100%;
+  margin-top: 60px;
+}
+.kt4_all_info-wrap .kt4_delivery_information {
+  width: 100%;
+  height: 100px;
+  padding: 20px 65px;
+  margin-bottom: 60px;
+  border-radius: 80px;
+  background: #eee;
+}
+.kt4_all_info-wrap .kt4_delivery_information .kt4_delivery-info .delivery-tit {
+  display: block;
+  font-weight: 900;
+  font-size: 20px;
+}
+.kt4_all_info-wrap .kt4_delivery_information .kt4_delivery-info .deliveryinfo {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+}
+.kt4_all_info-wrap .album_info {
+  margin-bottom: 60px;
+}
+.kt4_all_info-wrap .album_info-1 .album-artistinfo {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.kt4_all_info-wrap .album_info-3 {
+  margin-bottom: 0;
+}
+
+.album_details_images {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.kt4_cont-wrap {
+  margin-bottom: 60px;
+}
+.kt4_cont-wrap .kt4_cont {
+  margin-bottom: 60px;
+}
+.kt4_cont-wrap .kt4_cont .kt4_cont-return {
+  margin-bottom: 0;
+}
+.kt4_cont-wrap .kt4_packing {
+  text-align: center;
 }/*# sourceMappingURL=comm.css.map */
