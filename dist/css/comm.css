@@ -1671,4 +1671,10 @@ legend {
 }
 .kt4_cont-wrap .kt4_packing {
   text-align: center;
+}
+
+.event_main-wrap {
+  width: 100%;
+  height: 200px;
+  background: wheat;
 }/*# sourceMappingURL=comm.css.map */
