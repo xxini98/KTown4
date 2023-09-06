@@ -139,17 +139,18 @@
     }
 }
 .slider_info-bottom {
+    display: block;
     position: relative;
     width: 10.7143rem;
     height: 40px;
     border-radius: 50px;
     text-align: center;
-    button {
+    a {
         position: absolute;
         top: 0;
         left: 0;
         width: 10.7143rem;
-        height: 40px;
+        line-height: 40px;
         border-radius: 50px;
         color: $b;
         font-size: 15px;
@@ -160,7 +161,9 @@
     p {
         color: #277e94;
     }
-    button {
+
+    a {
+        display: block;
         background: #277e94;
         color: #ffffff;
     }
@@ -169,7 +172,7 @@
     p {
         color: #94631e;
     }
-    button {
+    a {
         background: #94631e;
         color: #ffffff;
     }
@@ -178,13 +181,13 @@
     p {
         color: #a45723;
     }
-    button {
+    a {
         background: #a45723;
         color: $w;
     }
 }
 .s4 {
-    button {
+    a {
         color: $w;
         background: $b;
     }
@@ -193,7 +196,7 @@
     p {
         color: #36579b;
     }
-    button {
+    a {
         background: #36579b;
         color: $w;
     }
@@ -202,7 +205,7 @@
     p {
         color: #b33d78;
     }
-    button {
+    a {
         background: #b33d78;
         color: $w;
     }

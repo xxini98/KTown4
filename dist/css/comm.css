@@ -469,18 +469,19 @@ legend {
 }
 
 .slider_info-bottom {
+  display: block;
   position: relative;
   width: 10.7143rem;
   height: 40px;
   border-radius: 50px;
   text-align: center;
 }
-.slider_info-bottom button {
+.slider_info-bottom a {
   position: absolute;
   top: 0;
   left: 0;
   width: 10.7143rem;
-  height: 40px;
+  line-height: 40px;
   border-radius: 50px;
   color: #000;
   font-size: 15px;
@@ -490,7 +491,8 @@ legend {
 .s1 p {
   color: #277e94;
 }
-.s1 button {
+.s1 a {
+  display: block;
   background: #277e94;
   color: #ffffff;
 }
@@ -498,7 +500,7 @@ legend {
 .s2 p {
   color: #94631e;
 }
-.s2 button {
+.s2 a {
   background: #94631e;
   color: #ffffff;
 }
@@ -506,12 +508,12 @@ legend {
 .s3 p {
   color: #a45723;
 }
-.s3 button {
+.s3 a {
   background: #a45723;
   color: #fff;
 }
 
-.s4 button {
+.s4 a {
   color: #fff;
   background: #000;
 }
@@ -519,7 +521,7 @@ legend {
 .s5 p {
   color: #36579b;
 }
-.s5 button {
+.s5 a {
   background: #36579b;
   color: #fff;
 }
@@ -527,7 +529,7 @@ legend {
 .s6 p {
   color: #b33d78;
 }
-.s6 button {
+.s6 a {
   background: #b33d78;
   color: #fff;
 }
