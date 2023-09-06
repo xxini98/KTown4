@@ -1677,6 +1677,123 @@ legend {
 
 .event_main-wrap {
   width: 100%;
-  height: 200px;
-  background: wheat;
+}
+
+.event_main-header .ehl {
+  display: flex;
+  margin-bottom: 30px;
+}
+.event_main-header .er-list {
+  display: block;
+  width: auto;
+  line-height: 40px;
+  padding: 0 30px;
+  margin-right: 30px;
+  border-radius: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.event_main-header .event-list {
+  background: #0062cc;
+}
+.event_main-header .event-list a {
+  font-weight: 900;
+  color: #fff;
+}
+.event_main-header .recipient {
+  background: #eee;
+}
+.event_main-header .event-header-list2 .er-list a {
+  color: #555555;
+}
+.event_main-header .event-header-list2 .on {
+  background: #0062cc;
+}
+.event_main-header .event-header-list2 .on a {
+  font-weight: 900;
+  color: #fff;
+}
+
+.event_middle-title {
+  width: 100%;
+  height: 100px;
+  padding: 25px 60px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  background: #eee;
+}
+.event_middle-title h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+.event_middle-title .event-days {
+  font-weight: 700;
+  color: #555555;
+}
+
+.event-middle-image {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.ectit {
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.cs_header-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+.cs_header-list .csl {
+  display: block;
+  width: auto;
+  line-height: 40px;
+  padding: 0 30px;
+  margin-right: 30px;
+  border-radius: 50px;
+  text-align: center;
+  background: #eee;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+.cs_header-list .csl a {
+  color: #555555;
+}
+.cs_header-list .cs_header-cs {
+  background: #0062cc;
+}
+.cs_header-list .cs_header-cs a {
+  font-weight: 900;
+  color: #fff;
+}
+
+.cs_main-seacrch {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.cs_main-seacrch::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: url(/images/comm/Untitled-5.png) no-repeat;
+}
+.cs_main-seacrch::after:hover {
+  background: #eee;
+}
+.cs_main-seacrch .cs-input {
+  float: right;
+  width: 400px;
+  max-width: 450px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 20px;
+  border: 1px solid #eee;
 }/*# sourceMappingURL=comm.css.map */
