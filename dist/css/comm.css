@@ -443,7 +443,6 @@ legend {
   height: 50px;
   background: url(/images/comm/logo-circle.svg) no-repeat;
   background-size: 100% auto;
-  background-position: center top;
 }
 
 .footer_second-wrap {
@@ -452,10 +451,11 @@ legend {
   background: #303037;
 }
 .footer_second-wrap .ft_sec {
+  position: relative;
   width: 100%;
   height: 100%;
 }
-.footer_second-wrap .ft_sec ul {
+.footer_second-wrap .ft_sec .fi_sec-ul {
   width: 100%;
   height: 100%;
   padding: 40px 0;
@@ -510,6 +510,62 @@ legend {
 }
 .footer_second-wrap .ft_sec .ft_sec-copy strong::after {
   display: none;
+}
+.footer_second-wrap .ft_sec .ft_sec-sns {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+.footer_second-wrap .ft_sec .ft_sec-sns .ft_sns-ul {
+  display: flex;
+}
+.footer_second-wrap .ft_sec .ft_sec-sns .ft_sns-ul .ft_sns {
+  position: relative;
+  margin-right: 20px;
+}
+.footer_second-wrap .ft_sec .ft_sec-sns .ft_sns-ul .ft_sns .ft_sns-icon {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #555555;
+}
+.footer_second-wrap .ft_sec .ft_sec-sns .ft_sns-ul .ft_sns .ft_sns-icon:hover {
+  background: #01c3cc;
+}
+.footer_second-wrap .ft_sec .ft_sec-sns .ft_sns-ul .ft_sns .fts1::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  background: url(/images/comm/x-icon.svg) no-repeat 0 0;
+  background-size: 100% auto;
+}
+.footer_second-wrap .ft_sec .ft_sec-sns .ft_sns-ul .ft_sns .fts2::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  background: url(/images/comm/youtube-icon.svg) no-repeat 0 0;
+  background-size: 100% auto;
+}
+.footer_second-wrap .ft_sec .ft_sec-sns .ft_sns-ul .ft_sns .fts3::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  background: url(/images/comm/insta-icon.svg) no-repeat 0 0;
+  background-size: 100% auto;
+}
+.footer_second-wrap .ft_sec .ft_sec-sns .ft_sns-ul .ft_sns:last-child {
+  margin: 0;
 }
 
 .container.is-slider {
