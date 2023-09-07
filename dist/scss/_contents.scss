@@ -309,7 +309,7 @@
 }
 
 .kt4_cont-wrap {
-    margin-bottom: 60px;
+    margin-bottom: 85px;
     .kt4_cont {
         margin-bottom: 60px;
         .kt4_cont-return {
@@ -322,6 +322,7 @@
 }
 .event_main-wrap {
     width: 100%;
+    margin-bottom: 85px;
 }
 .event_main-header {
     .ehl {
@@ -393,6 +394,11 @@
     font-size: 40px;
     margin-bottom: 40px;
 }
+
+.cs_main-wrap {
+    width: 100%;
+    margin-bottom: 85px;
+}
 .cs_header-list {
     display: flex;
     margin-bottom: 30px;
@@ -428,16 +434,18 @@
     &::after {
         content: '';
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 10px;
+        right: 20px;
         width: 30px;
         height: 30px;
-        background: url(/images/comm/Untitled-5.png) no-repeat;
+        cursor: pointer;
+        background: url(/images/comm/bbs-searchicon.png) no-repeat;
         &:hover {
             background: $gray-e;
         }
     }
     .cs-input {
+        position: relative;
         float: right;
         width: 400px;
         max-width: 450px;
@@ -446,4 +454,8 @@
         padding: 20px;
         border: 1px solid $gray-e;
     }
+}
+
+.cs_main-middle {
+    width: 100%;
 }

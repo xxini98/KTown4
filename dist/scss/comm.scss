@@ -14,6 +14,155 @@
     margin: 0 auto;
 }
 
+.footer_first-wrap {
+    width: 100%;
+    height: 280px;
+    background: #383840;
+    .ft_sec {
+        display: flex;
+        height: 100%;
+        padding: 30px 0;
+        justify-content: space-between;
+    }
+    .ff_box {
+        .ff_bx-tit {
+            margin-bottom: 30px;
+            font-weight: 900;
+            font-size: 22px;
+            color: $w;
+        }
+    }
+    .ft_cscenter {
+        .cs_notice {
+            display: block;
+            line-height: 32px;
+            color: $gray-e;
+        }
+        .cs-talk {
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: 900;
+            font-size: 30px;
+            color: $w;
+            &:hover {
+                color: $prim2;
+            }
+        }
+    }
+    .ft_community {
+        .ft_com-ul {
+            display: flex;
+            width: 330px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .ft_com-li {
+            width: 150px;
+            margin-bottom: 18px;
+            a {
+                color: $gray-e;
+            }
+        }
+    }
+    .ft_company {
+        .ft_company-ul {
+            display: flex;
+            .ft_company-li {
+                margin-right: 20px;
+                text-align: center;
+                a {
+                    display: block;
+                    width: 100px;
+                    height: auto;
+                    text-align: center;
+                }
+                .ft_company-icon {
+                    position: relative;
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    margin: 0 auto 20px;
+                    background: #35353d;
+                }
+                span {
+                    display: inline-block;
+                    width: 90%;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: $gray-e;
+                }
+                .ftc1 {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        width: 55px;
+                        height: 55px;
+                        z-index: 1;
+                        background: url(/images/comm/logo-cj.svg) no-repeat;
+                        background-size: 100% auto;
+                        background-position: center top;
+                    }
+                }
+                .ftc2 {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        width: 55px;
+                        height: 55px;
+                        z-index: 1;
+                        background: url(/images/comm/logo-hanjin.svg) no-repeat;
+                        background-size: 70% auto;
+                        background-position: center top;
+                    }
+                }
+                .ftc3 {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        width: 55px;
+                        height: 55px;
+                        z-index: 1;
+                        background: url(/images/comm/logo-hanter.svg) no-repeat;
+                        background-size: 100% auto;
+                        background-position: center top;
+                    }
+                }
+                .ftc4 {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        width: 55px;
+                        height: 55px;
+                        z-index: 1;
+                        background: url(/images/comm/logo-circle.svg) no-repeat;
+                        background-size: 100% auto;
+                        background-position: center top;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer_second-wrap {
+    width: 100%;
+    height: 350px;
+    background: #303037;
+    .ft_sec {
+        width: 100%;
+        li {
+            display: inline-block;
+        }
+    }
+}
 // 공통
 
 @import 'main', 'contents';

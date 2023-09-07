@@ -324,6 +324,141 @@ legend {
   margin: 0 auto;
 }
 
+.footer_first-wrap {
+  width: 100%;
+  height: 280px;
+  background: #383840;
+}
+.footer_first-wrap .ft_sec {
+  display: flex;
+  height: 100%;
+  padding: 30px 0;
+  justify-content: space-between;
+}
+.footer_first-wrap .ff_box .ff_bx-tit {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 22px;
+  color: #fff;
+}
+.footer_first-wrap .ft_cscenter .cs_notice {
+  display: block;
+  line-height: 32px;
+  color: #eee;
+}
+.footer_first-wrap .ft_cscenter .cs-talk {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-size: 30px;
+  color: #fff;
+}
+.footer_first-wrap .ft_cscenter .cs-talk:hover {
+  color: #01c3cc;
+}
+.footer_first-wrap .ft_community .ft_com-ul {
+  display: flex;
+  width: 330px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer_first-wrap .ft_community .ft_com-li {
+  width: 150px;
+  margin-bottom: 18px;
+}
+.footer_first-wrap .ft_community .ft_com-li a {
+  color: #eee;
+}
+.footer_first-wrap .ft_company .ft_company-ul {
+  display: flex;
+}
+.footer_first-wrap .ft_company .ft_company-ul .ft_company-li {
+  margin-right: 20px;
+  text-align: center;
+}
+.footer_first-wrap .ft_company .ft_company-ul .ft_company-li a {
+  display: block;
+  width: 100px;
+  height: auto;
+  text-align: center;
+}
+.footer_first-wrap .ft_company .ft_company-ul .ft_company-li .ft_company-icon {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background: #35353d;
+}
+.footer_first-wrap .ft_company .ft_company-ul .ft_company-li span {
+  display: inline-block;
+  width: 90%;
+  vertical-align: middle;
+  text-align: center;
+  color: #eee;
+}
+.footer_first-wrap .ft_company .ft_company-ul .ft_company-li .ftc1::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 55px;
+  height: 55px;
+  z-index: 1;
+  background: url(/images/comm/logo-cj.svg) no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+}
+.footer_first-wrap .ft_company .ft_company-ul .ft_company-li .ftc2::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 55px;
+  height: 55px;
+  z-index: 1;
+  background: url(/images/comm/logo-hanjin.svg) no-repeat;
+  background-size: 70% auto;
+  background-position: center top;
+}
+.footer_first-wrap .ft_company .ft_company-ul .ft_company-li .ftc3::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 55px;
+  height: 55px;
+  z-index: 1;
+  background: url(/images/comm/logo-hanter.svg) no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+}
+.footer_first-wrap .ft_company .ft_company-ul .ft_company-li .ftc4::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 55px;
+  height: 55px;
+  z-index: 1;
+  background: url(/images/comm/logo-circle.svg) no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+}
+
+.footer_second-wrap {
+  width: 100%;
+  height: 350px;
+  background: #303037;
+}
+.footer_second-wrap .ft_sec {
+  width: 100%;
+}
+.footer_second-wrap .ft_sec li {
+  display: inline-block;
+}
+
 .container.is-slider {
   position: relative;
 }
@@ -1663,7 +1798,7 @@ legend {
 }
 
 .kt4_cont-wrap {
-  margin-bottom: 60px;
+  margin-bottom: 85px;
 }
 .kt4_cont-wrap .kt4_cont {
   margin-bottom: 60px;
@@ -1677,6 +1812,7 @@ legend {
 
 .event_main-wrap {
   width: 100%;
+  margin-bottom: 85px;
 }
 
 .event_main-header .ehl {
@@ -1743,6 +1879,11 @@ legend {
   margin-bottom: 40px;
 }
 
+.cs_main-wrap {
+  width: 100%;
+  margin-bottom: 85px;
+}
+
 .cs_header-list {
   display: flex;
   margin-bottom: 30px;
@@ -1779,16 +1920,18 @@ legend {
 .cs_main-seacrch::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 20px;
   width: 30px;
   height: 30px;
-  background: url(/images/comm/Untitled-5.png) no-repeat;
+  cursor: pointer;
+  background: url(/images/comm/bbs-searchicon.png) no-repeat;
 }
 .cs_main-seacrch::after:hover {
   background: #eee;
 }
 .cs_main-seacrch .cs-input {
+  position: relative;
   float: right;
   width: 400px;
   max-width: 450px;
@@ -1796,4 +1939,8 @@ legend {
   border-radius: 50px;
   padding: 20px;
   border: 1px solid #eee;
+}
+
+.cs_main-middle {
+  width: 100%;
 }/*# sourceMappingURL=comm.css.map */
