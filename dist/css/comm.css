@@ -338,7 +338,7 @@ legend {
 .footer_first-wrap .ff_box .ff_bx-tit {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
 }
 .footer_first-wrap .ft_cscenter .cs_notice {
@@ -391,6 +391,9 @@ legend {
   margin: 0 auto 20px;
   background: #35353d;
 }
+.footer_first-wrap .ft_company .ft_company-ul .ft_company-li .ft_company-icon:hover {
+  background: #0062cc;
+}
 .footer_first-wrap .ft_company .ft_company-ul .ft_company-li span {
   display: inline-block;
   width: 90%;
@@ -401,11 +404,10 @@ legend {
 .footer_first-wrap .ft_company .ft_company-ul .ft_company-li .ftc1::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 55px;
-  height: 55px;
-  z-index: 1;
+  top: 12px;
+  left: 11px;
+  width: 50px;
+  height: 50px;
   background: url(/images/comm/logo-cj.svg) no-repeat;
   background-size: 100% auto;
   background-position: center top;
@@ -413,11 +415,10 @@ legend {
 .footer_first-wrap .ft_company .ft_company-ul .ft_company-li .ftc2::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 18px;
   left: 10px;
-  width: 55px;
-  height: 55px;
-  z-index: 1;
+  width: 50px;
+  height: 50px;
   background: url(/images/comm/logo-hanjin.svg) no-repeat;
   background-size: 70% auto;
   background-position: center top;
@@ -425,11 +426,10 @@ legend {
 .footer_first-wrap .ft_company .ft_company-ul .ft_company-li .ftc3::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 10px;
-  width: 55px;
-  height: 55px;
-  z-index: 1;
+  width: 50px;
+  height: 50px;
   background: url(/images/comm/logo-hanter.svg) no-repeat;
   background-size: 100% auto;
   background-position: center top;
@@ -439,9 +439,8 @@ legend {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 55px;
-  height: 55px;
-  z-index: 1;
+  width: 50px;
+  height: 50px;
   background: url(/images/comm/logo-circle.svg) no-repeat;
   background-size: 100% auto;
   background-position: center top;
@@ -449,14 +448,68 @@ legend {
 
 .footer_second-wrap {
   width: 100%;
-  height: 350px;
+  height: 310px;
   background: #303037;
 }
 .footer_second-wrap .ft_sec {
   width: 100%;
+  height: 100%;
 }
-.footer_second-wrap .ft_sec li {
-  display: inline-block;
+.footer_second-wrap .ft_sec ul {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+}
+.footer_second-wrap .ft_sec .ft_sec-li {
+  position: relative;
+  display: flex;
+  float: left;
+  gap: 15px;
+  line-height: 40px;
+  margin-right: 60px;
+}
+.footer_second-wrap .ft_sec .ft_sec-li strong {
+  position: relative;
+}
+.footer_second-wrap .ft_sec .ft_sec-li strong::after {
+  content: ":";
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+.footer_second-wrap .ft_sec .ft_sec-li strong,
+.footer_second-wrap .ft_sec .ft_sec-li span {
+  font-weight: 400;
+  color: #eee;
+}
+.footer_second-wrap .ft_sec .ft_sec-li a {
+  font-weight: 700;
+  color: #fff;
+}
+.footer_second-wrap .ft_sec .ft_sec-num {
+  clear: both;
+}
+.footer_second-wrap .ft_sec .ft_sec-sellnum,
+.footer_second-wrap .ft_sec .ft_sec-add,
+.footer_second-wrap .ft_sec .ft_sec-dadd,
+.footer_second-wrap .ft_sec .ft_sec-copy {
+  clear: both;
+}
+.footer_second-wrap .ft_sec .ft_sec-company::after,
+.footer_second-wrap .ft_sec .ft_sec-cpnum::after,
+.footer_second-wrap .ft_sec .ft_sec-num::after {
+  content: "|";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  color: #999;
+}
+.footer_second-wrap .ft_sec .ft_sec-copy strong {
+  font-weight: 700;
+  color: #0062cc;
+}
+.footer_second-wrap .ft_sec .ft_sec-copy strong::after {
+  display: none;
 }
 
 .container.is-slider {
