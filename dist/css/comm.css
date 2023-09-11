@@ -169,11 +169,6 @@ body {
 }
 
 /* desktop */
-@media screen and (min-width: 1280px) {
-  body {
-    font-size: 16px;
-  }
-}
 /* color값은 디자인가이드에 맞게사용 */
 a {
   color: #333;
@@ -312,7 +307,7 @@ legend {
 }
 
 .wrap {
-  padding-top: 195px;
+  margin-top: -525px;
   font-weight: 400;
   font-family: "NanumSquareRound";
   background: #fff;
@@ -320,8 +315,75 @@ legend {
 
 .container {
   max-width: 1280px;
-  width: 1280px;
   margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+#hd_wrapper {
+  width: 100%;
+  padding: 30px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo a {
+  display: block;
+  width: 200px;
+  height: 90px;
+  background: url(/images/comm/LOGO-MAIN.png) 0 50%/contain no-repeat;
+  text-indent: -9999px;
+}
+
+.sound_only {
+  text-indent: -999px;
+}
+
+#gnb {
+  display: inline-block;
+  position: relative;
+  margin-top: 50px;
+}
+#gnb h2 {
+  position: absolute;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.gnb_wrap {
+  display: inline-block;
+}
+.gnb_wrap .gnb_1dul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.gnb_wrap .gnb_1dul .gnb_1dli {
+  display: inline-block;
+  line-height: 45px;
+}
+.gnb_wrap .gnb_1dul .gnb_1dli a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: #0062cc;
+}
+.gnb_wrap .gnb_1dul .gnb_1dli a:hover {
+  color: #01c3cc;
+}
+.gnb_wrap .gnb_1dul .gnb_1dli:nth-child(3) {
+  margin-bottom: 30px;
+}
+.gnb_wrap .gnb_1dul .gnb_1dli:nth-child(6) {
+  margin-bottom: 30px;
 }
 
 .footer_first-wrap {
@@ -1440,6 +1502,10 @@ legend {
 }
 .ktown4u_chart .chart-wrap .chart-right .chart_4-add-wrap .chart_4-add .chart_4-add-text .chart_4-add-contents .chart_4-add-album {
   display: block;
+  width: 300px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-weight: 700;
   font-size: 14px;
 }
@@ -1602,6 +1668,50 @@ legend {
   top: 108px;
 }
 
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .container.is-slider .slider_wrap {
+    background: url(/images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px 310px/95% 40%;
+  }
+  .container.is-slider .slider_right .slide-img {
+    width: 500px;
+    height: 500px;
+  }
+  .slider_info-bottom {
+    margin-top: 50px;
+  }
+  .eventTab-warp {
+    margin: 100px auto 100px;
+  }
+  .eventTab-warp .evenTab .eventcontent .eventcontent-txt h2 {
+    font-size: 30px;
+  }
+  .preorder .preorder-wrap .swiper-arrow-prev {
+    left: -300px;
+  }
+  .preorder .preorder-wrap .swiper-arrow-next {
+    left: -210px;
+  }
+  .ad_kt4 .ad_kt4_img img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .new_life {
+    margin-top: 100px;
+  }
+  .ktown4u_chart .chart-wrap .chart-right .chart_4-add-wrap .chart_4-add .chart_4-add-text .chart_4-add-contents .chart_4-add-album {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .ktown4u_offline .ktown4u_offline-wrap {
+    background-position: 0% 10%;
+  }
+}
 .itemview-main {
   display: flex;
   width: 100%;

@@ -48,6 +48,12 @@ $(function () {
             nextEl: '.swiper-arrow-next',
             prevEl: '.swiper-arrow-prev',
         },
+        breakpoints: {
+            1399: {
+                slidesPerView: 3,
+                spaceBetween: 100,
+            },
+        },
     });
 
     let brandSwiper = new Swiper('.swiper.is-brand', {

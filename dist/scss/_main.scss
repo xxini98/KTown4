@@ -880,6 +880,10 @@
                             }
                             .chart_4-add-album {
                                 display: block;
+                                width: 300px;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
                                 font-weight: 700;
                                 font-size: 14px;
                             }
@@ -1056,5 +1060,88 @@
         position: absolute;
         right: 0;
         top: 108px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .container.is-slider .slider_wrap {
+        background: url(/images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px 310px/95% 40%;
+    }
+    .container.is-slider .slider_right .slide-img {
+        width: 500px;
+        height: 500px;
+        // transform: scale(0.9);
+    }
+    .slider_info-bottom {
+        margin-top: 50px;
+    }
+    .eventTab-warp {
+        margin: 100px auto 100px;
+    }
+    .eventTab-warp .evenTab .eventcontent .eventcontent-txt h2 {
+        font-size: 30px;
+    }
+    .preorder .preorder-wrap .swiper-arrow-prev {
+        left: -300px;
+    }
+    .preorder .preorder-wrap .swiper-arrow-next {
+        left: -210px;
+    }
+    .ad_kt4 .ad_kt4_img img {
+        object-fit: contain;
+    }
+    .new_life {
+        margin-top: 100px;
+    }
+    // .new_life
+    //     .new_life-wrap
+    //     .new_life_middle
+    //     .new_life_middle-infomation
+    //     .new_life_middle-info
+    //     .nl-info
+    //     .nl-img {
+    //     // border-radius: 40px;
+    // }
+    // .new_life
+    //     .new_life-wrap
+    //     .new_life_middle
+    //     .new_life_middle-infomation
+    //     .new_life_middle-info
+    //     .nl-info
+    //     .nl-img
+    //     img {
+    //     border-radius: 40px;
+    // }
+    // .new_life
+    //     .new_life-wrap
+    //     .new_life_middle
+    //     .new_life_middle-infomation
+    //     .new_life_middle-info
+    //     .nl_text
+    //     .nl_text-title {
+    //     height: 75px;
+    // }
+    // .chart_1-3 {
+    //     transform: scale(0.9);
+    // }
+    .ktown4u_chart
+        .chart-wrap
+        .chart-right
+        .chart_4-add-wrap
+        .chart_4-add
+        .chart_4-add-text
+        .chart_4-add-contents
+        .chart_4-add-album {
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .ktown4u_offline .ktown4u_offline-wrap {
+        background-position: 0% 10%;
     }
 }
