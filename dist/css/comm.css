@@ -318,11 +318,6 @@ legend {
   margin: 0 auto;
 }
 
-header {
-  position: sticky;
-  top: 0;
-}
-
 #hd_wrapper {
   width: 100%;
   padding: 30px;
@@ -994,6 +989,7 @@ header {
   margin-bottom: 10px;
 }
 .preorder-left .swiper-slide.is-pretxt .slider_pre-info {
+  width: 225px;
   font-weight: 400;
   font-size: 16px;
   color: #555555;
@@ -1262,6 +1258,7 @@ header {
 }
 
 .nl_text .nl_text-title {
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   color: #151515;
@@ -1866,8 +1863,114 @@ header {
     width: 450px;
     height: 450px;
   }
-  .ktown4u_chart {
-    display: none;
+  .swiper-arrow-main {
+    bottom: 90px;
+  }
+  .slider_info-top .slider_tagline {
+    font-size: 20px;
+  }
+  .slider_info-top .slider-title-text-artist {
+    font-size: 45px;
+  }
+  .slider_info-top .slider-title-text-nth {
+    font-size: 40px;
+  }
+  .slider_info-top .slider-title-text-albumtit {
+    font-size: 40px;
+  }
+  .slider_info-top .slider_info-text {
+    font-size: 16px;
+  }
+  .eventTab-warp {
+    padding: 0;
+  }
+  .preorder {
+    height: 750px;
+  }
+  .preorder-wrap {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+  .preorder-left {
+    width: 100%;
+  }
+  .preorder-left .swiper-slide.is-pretxt {
+    width: auto;
+    text-align: center;
+  }
+  .preorder-left .swiper-slide.is-pretxt .slider_pre-info {
+    width: auto;
+  }
+  .preorder-left .swiper-slide.is-pretxt .slider_pre_tagline {
+    margin-left: 20px;
+  }
+  .preorder-right {
+    position: absolute;
+    top: 185px;
+    left: 90px;
+    width: 85%;
+  }
+  .swiper-arrow-prev {
+    top: 260px;
+    left: -50px;
+  }
+  .swiper-arrow-next {
+    top: 260px;
+    left: 850px;
+  }
+  .swiper-arrow-next .swiper-pre-next {
+    margin-right: 0;
+  }
+  .new_life_middle-infomation {
+    width: 30%;
+  }
+  .nl_text .nl_text-title {
+    font-size: 13px;
+    height: 40px;
+  }
+  .nl_text .nl_text-release {
+    font-size: 13px;
+  }
+  .nl_text .nl_text-price .nl_text-sale {
+    font-size: 13px;
+  }
+  .nl_text .nl_text-price .nl_text-cost {
+    font-size: 13px;
+  }
+  .nl_text .nl_text-price .nl_text-cost::before {
+    top: 50%;
+    width: 60px;
+    height: 1px;
+  }
+  .nl_text .nl_text-price .nl_text-dis {
+    font-size: 13px;
+  }
+  .chart-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .chart-wrap .chart_4-add-wrap {
+    display: block;
+  }
+  .chart-right {
+    width: 99%;
+  }
+  .chart-left {
+    width: 100%;
+    text-align: center;
+  }
+  .chart-left .chart_tit::after {
+    left: 360px;
+  }
+  .chart_4-add {
+    width: 100%;
+  }
+  .chart_4-add .chart_4-add-contents .chart_4-add-album {
+    width: auto;
+  }
+  .brandshop-wrap .brandshop-header-info2 {
+    right: 30px;
   }
 }
 @media screen and (max-width: 744px) {

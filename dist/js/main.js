@@ -43,6 +43,7 @@ $(function () {
   var preSwiper = new Swiper(".swiper.is-preimg", {
     slidesPerView: 3,
     spaceBetween: 30,
+    loop: true,
     grabCursor: true,
     navigation: {
       nextEl: ".swiper-arrow-next",
@@ -64,6 +65,7 @@ $(function () {
   let brandSwiper = new Swiper(".swiper.is-brand", {
     slidesPerView: 5,
     spaceBetween: 30,
+    loop: true,
     grabCursor: true,
     scrollbar: {
       el: ".swiper-scrollbar",
