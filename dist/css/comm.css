@@ -632,7 +632,8 @@ legend {
   position: relative;
   display: flex;
   align-items: stretch;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: flex-start;
   background: url(/images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px 380px/95% 40%;
 }
 
@@ -702,7 +703,7 @@ legend {
 
 .swiper-arrow-main {
   position: absolute;
-  bottom: 100px;
+  top: 440px;
   left: 0px;
   display: flex;
   color: #eee;
@@ -1023,33 +1024,45 @@ legend {
 .preorder-right .swiper.is-preimg {
   margin-top: 40px;
 }
+.preorder-right .swiper-slide.is-preimg {
+  width: 100% !important;
+}
 .preorder-right .swiper-wrapper.is-preimg {
   display: flex;
 }
 
 .prebx-wrap {
   display: block;
-  width: 245px;
+  width: 100%;
   height: 460px;
 }
 
 .prebx-capsule {
-  width: 100%;
+  width: 30%;
   height: 100%;
   border-radius: 150px;
   background: #fff;
 }
 
 .prebx-capsule-img {
-  width: 245px;
-  height: 245px;
+  position: relative;
+  width: 100%;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
 }
-.prebx-capsule-img img {
+.prebx-capsule-img::before {
+  content: "";
+  display: block;
   width: 100%;
-  height: 100%;
+  padding-top: 100%;
+}
+.prebx-capsule-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1174,6 +1187,10 @@ legend {
   cursor: pointer;
 }
 
+.swiper-scrollbar.is-preorder {
+  display: none;
+}
+
 .ad_kt4 {
   width: 100%;
   height: 100px;
@@ -1183,11 +1200,14 @@ legend {
   width: 100%;
   height: 100%;
 }
-.ad_kt4 .ad_kt4_img img {
+.ad_kt4 .ad_kt4_img .desktop_img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.ad_kt4 .ad_kt4_img .tablet_img {
+  display: none;
 }
 
 .new_life {
@@ -1383,7 +1403,7 @@ legend {
 .chart_1-3-wrap {
   margin: 65px 0 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .chart_1-3-wrap .chart_1-3 {
   position: relative;
@@ -1740,13 +1760,7 @@ legend {
   .eventTab-warp {
     margin: 100px auto 100px;
   }
-  .swiper-arrow-prev {
-    left: -360px;
-  }
-  .swiper-arrow-next {
-    left: -270px;
-  }
-  .new_life {
+  ew_life {
     margin-top: 100px;
   }
   .life {
@@ -1761,9 +1775,6 @@ legend {
   .container.is-slider .slider_wrap {
     background: url(/images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px 310px/95% 40%;
   }
-  .swiper-arrow-main {
-    bottom: 0;
-  }
   .eventTab-warp {
     margin: 100px auto 100px;
   }
@@ -1777,8 +1788,8 @@ legend {
     left: -240px;
   }
   .ad_kt4 .ad_kt4_img img {
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .new_life {
     margin-top: 100px;
@@ -1789,7 +1800,7 @@ legend {
   .ktown4u_chart .chart-wrap .chart-right .chart_1-3-wrap {
     margin: 30px 0 80px;
   }
-  .chart_1-3 {
+  .chart_1-3-wrap .chart_1-3 {
     transform: scale(0.9);
   }
   .chart_4-add .chart_4-add-contents .chart_4-add-album {
@@ -1867,7 +1878,7 @@ legend {
     background: url(/images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px 280px/95% 40%;
   }
   .swiper-arrow-main {
-    bottom: 10px;
+    top: 360px;
   }
   .slider_info-top .slider-title {
     margin-bottom: 30px;
@@ -1876,25 +1887,27 @@ legend {
     font-size: 20px;
   }
   .slider_info-top .slider-title-text-artist {
-    font-size: 45px;
+    font-size: 40px;
   }
   .slider_info-top .slider-title-text-nth {
-    font-size: 40px;
+    font-size: 35px;
   }
   .slider_info-top .slider-title-text-albumtit {
-    font-size: 40px;
+    font-size: 35px;
   }
   .slider_info-top .slider_info-text {
-    font-size: 16px;
+    font-size: 14px;
   }
   .slider_info-middle {
     margin-bottom: 30px;
   }
   .eventTab-warp {
+    display: none;
     padding: 0;
   }
   .preorder {
-    height: 750px;
+    margin-top: 100px;
+    height: 700px;
   }
   .preorder-wrap {
     position: relative;
@@ -1916,24 +1929,48 @@ legend {
   }
   .preorder-right {
     position: absolute;
-    top: 185px;
+    height: auto;
+    top: 145px;
     left: 90px;
     width: 85%;
   }
-  .swiper-arrow-prev {
-    top: 260px;
-    left: -50px;
+  .swiper-scrollbar.is-preorder {
+    display: block;
+    margin-top: -200px;
   }
-  .swiper-arrow-next {
-    top: 260px;
-    left: 850px;
-    bottom: auto;
+  .swiper-arrow-wrap {
+    display: none;
   }
-  .swiper-arrow-next .swiper-pre-next {
-    margin-right: 0;
+  .ad_kt4 {
+    height: 200px;
+  }
+  .ad_kt4 .ad_kt4_img .desktop_img {
+    display: none;
+  }
+  .ad_kt4 .ad_kt4_img .tablet_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .new_life_middle-infomation {
     width: 30%;
+  }
+  .new_life-_header-info2 {
+    text-indent: -99999px;
+  }
+  .new_life-_header-info2::after {
+    content: "\f067";
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    font-size: 20px;
+    color: #000000;
   }
   .nl_text .nl_text-title {
     font-size: 13px;
@@ -1998,9 +2035,7 @@ legend {
   }
   .container.is-slider .slider_left {
     width: 285px;
-  }
-  .slider_info-bottom {
-    margin-top: 35px;
+    margin-top: -70px;
   }
   .slider_info-top .slider-title {
     margin-bottom: 20px;
@@ -2024,7 +2059,7 @@ legend {
     font-size: 15px;
   }
   .slider_right {
-    width: 52%;
+    width: 55%;
   }
   .slider_right .slide-img::before {
     width: 70px;
@@ -2035,16 +2070,7 @@ legend {
     height: 100px;
   }
   .swiper-arrow-main {
-    bottom: 42%;
-    left: 94%;
-    z-index: 2;
-  }
-  .swiper-arrow-main .swiper-main-prev {
-    background: #fff;
-  }
-  .swiper-arrow-main .swiper-main-next {
-    margin: 0 0 0 230px;
-    background: #fff;
+    top: 320px;
   }
   .swiper-arrow-next {
     left: 0;
@@ -2057,6 +2083,11 @@ legend {
   }
   .ktown4u_chart {
     display: none;
+  }
+}
+@media screen and (max-width: 428px) {
+  .container {
+    padding: 0 20px;
   }
 }
 .itemview-main {

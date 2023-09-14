@@ -34,31 +34,34 @@ $(function () {
     contentSwiper.controller.control = photoSwiper;
 
     var preSwiper = new Swiper('.swiper.is-preimg', {
-        slidesPerView: 3,
+        slidesPerView: 5,
         spaceBetween: 30,
         loop: true,
         grabCursor: true,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            hide: true,
+        },
         navigation: {
             nextEl: '.swiper-arrow-next',
             prevEl: '.swiper-arrow-prev',
         },
-
         breakpoints: {
             767: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 10,
             },
             1023: {
                 slidesPerView: 3,
-                spaceBetween: 30,
+                spaceBetween: 35,
             },
             1399: {
                 slidesPerView: 3,
-                spaceBetween: 15,
+                spaceBetween: 30,
             },
             1599: {
                 slidesPerView: 3,
-                spaceBetween: 60,
+                spaceBetween: 40,
             },
         },
     });
