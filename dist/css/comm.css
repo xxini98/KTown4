@@ -1387,12 +1387,10 @@ legend {
 }
 .chart-left .chart_tit::after {
   content: "";
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 245px;
-  height: 35px;
-  background: url(/images/main/chart.svg) no-repeat 0 0;
+  display: block;
+  width: 225px;
+  height: 25px;
+  background: url(/images/main/chart.svg) no-repeat 0 0/cover;
 }
 
 .chart-right {
@@ -1407,33 +1405,51 @@ legend {
 }
 .chart_1-3-wrap .chart_1-3 {
   position: relative;
+  width: 100%;
+  height: 100%;
+}
+.chart_1-3-wrap .chart_capsule {
+  width: 100%;
+  height: 100%;
 }
 
 .chart_capsule-wrap {
   display: block;
-  width: 280px;
-  height: 480px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
   border-radius: 150px;
   background: #fff;
 }
 .chart_capsule-wrap .chartbx_capsule {
   width: 100%;
   height: 100%;
+  aspect-ratio: 1/1;
 }
 .chart_capsule-wrap .chartbx_capsule-img {
-  width: 280px;
-  height: 280px;
+  position: relative;
+  width: 100%;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
 }
-.chart_capsule-wrap .chartbx_capsule-img img {
+.chart_capsule-wrap .chartbx_capsule-img::before {
+  content: "";
+  display: block;
   width: 100%;
-  height: 100%;
+  padding-top: 100%;
+}
+.chart_capsule-wrap .chartbx_capsule-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .chart_capsule-wrap .chartbx_capsule-text {
+  height: 60%;
   text-align: center;
   margin-top: 20px;
 }
@@ -1441,7 +1457,8 @@ legend {
   content: "";
   position: absolute;
   bottom: 10px;
-  left: 110px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 60px;
   height: 4px;
   border-radius: 150px;
@@ -1452,7 +1469,8 @@ legend {
   content: "";
   position: absolute;
   bottom: 10px;
-  left: 100px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 80px;
   height: 4px;
   border-radius: 150px;
@@ -1463,7 +1481,8 @@ legend {
   content: "";
   position: absolute;
   bottom: 10px;
-  left: 125px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 30px;
   height: 4px;
   border-radius: 150px;
@@ -1496,7 +1515,8 @@ legend {
   content: "1st";
   position: absolute;
   top: -75px;
-  left: 105px;
+  left: 50%;
+  transform: translateX(-50%);
   font-weight: 900;
   font-size: 40px;
   color: #151515;
@@ -1506,7 +1526,8 @@ legend {
   content: "2nd";
   position: absolute;
   top: -75px;
-  left: 105px;
+  left: 50%;
+  transform: translateX(-50%);
   font-weight: 900;
   font-size: 40px;
   color: #151515;
@@ -1516,7 +1537,8 @@ legend {
   content: "3rd";
   position: absolute;
   top: -75px;
-  left: 105px;
+  left: 50%;
+  transform: translateX(-50%);
   font-weight: 900;
   font-size: 40px;
   color: #151515;
@@ -1800,9 +1822,6 @@ legend {
   .ktown4u_chart .chart-wrap .chart-right .chart_1-3-wrap {
     margin: 30px 0 80px;
   }
-  .chart_1-3-wrap .chart_1-3 {
-    transform: scale(0.9);
-  }
   .chart_4-add .chart_4-add-contents .chart_4-add-album {
     width: 200px;
     overflow: hidden;
@@ -1865,6 +1884,9 @@ legend {
   .life {
     margin-bottom: 100px;
   }
+  .chart_capsule-wrap .chartbx_capsule-text {
+    height: 80%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -1904,18 +1926,26 @@ legend {
   }
   .preorder {
     margin-top: 100px;
-    height: 700px;
+    height: 780px;
   }
   .preorder-wrap {
     display: block;
+    padding: 30px;
   }
   .preorder-left {
     width: 100%;
-    height: auto;
+    height: 20%;
+  }
+  .preorder-left .swiper.is-pretxt {
+    width: 100%;
+  }
+  .preorder-left .slider-wrapper.is-pretxt {
+    width: 100%;
   }
   .preorder-left .swiper-slide.is-pretxt {
     width: auto;
     text-align: center;
+    margin: 0;
   }
   .preorder-left .swiper-slide.is-pretxt .slider_pre-info {
     width: auto;
@@ -1923,9 +1953,26 @@ legend {
   .preorder-left .swiper-slide.is-pretxt .slider_pre_tagline {
     margin-left: 20px;
   }
+  .prebx-capsule-text .capsule-price {
+    font-size: 15px;
+  }
+  .prebx-capsule-text .capsule-price .capsule-price-net::after {
+    width: 65px;
+  }
   .preorder-right {
     width: 100%;
-    height: 100%;
+    height: auto;
+  }
+  .preorder-right .swiper.is-preimg {
+    margin: 0;
+  }
+  .preorder-right .swiper-slide.is-preimg {
+    margin-top: 20px;
+    height: auto;
+  }
+  .preorder-right .swiper-wrapper.is-preimg {
+    display: flex;
+    height: auto;
   }
   .preorder-right .swiper-slide.is-preimg {
     height: 80%;
@@ -1933,6 +1980,19 @@ legend {
   .swiper-scrollbar.is-preorder {
     display: block;
     margin-top: -200px;
+  }
+  .prebx-wrap {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .prebx-capsule-text {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    height: 70%;
+    text-align: center;
+    align-items: center;
   }
   .swiper-arrow-wrap {
     display: none;
@@ -1954,19 +2014,17 @@ legend {
     width: 30%;
   }
   .new_life-_header-info2 {
-    text-indent: -99999px;
+    font-size: 0;
   }
   .new_life-_header-info2::after {
-    content: "\f067";
-    font-family: "Line Awesome Free";
+    content: "+";
+    font-family: "Font Awesome 6 Free";
     font-weight: 900;
     position: absolute;
-    top: 0;
-    width: 30px;
-    height: 30px;
-    left: 0;
+    top: -10px;
+    left: -20px;
     font-size: 20px;
-    color: #000000;
+    color: #999;
   }
   .nl_text .nl_text-title {
     font-size: 13px;
@@ -1992,6 +2050,7 @@ legend {
   .chart-wrap {
     flex-direction: column;
     align-items: center;
+    padding: 50px 30px;
   }
   .chart-wrap .chart_4-add-wrap {
     display: block;
@@ -2002,9 +2061,10 @@ legend {
   .chart-left {
     width: 100%;
     text-align: center;
+    margin: 0;
   }
   .chart-left .chart_tit::after {
-    left: 360px;
+    margin: 0 auto;
   }
   .chart_4-add {
     width: 100%;
@@ -2076,6 +2136,15 @@ legend {
   }
   .preorder {
     margin-top: 100px;
+  }
+  .preorder-wrap {
+    padding: 30px;
+  }
+  .prebx-capsule-text {
+    height: 65%;
+  }
+  .prebx-capsule-text .capsule-title {
+    width: 240px;
   }
   .ktown4u_chart {
     display: none;
