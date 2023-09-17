@@ -957,16 +957,16 @@ legend {
 
 .preorder {
   width: 100%;
-  height: 600px;
   background: #fafafa;
 }
 
 .preorder-wrap {
   position: relative;
   display: flex;
+  justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  justify-content: space-evenly;
+  padding-bottom: 90px;
 }
 
 .preorder-left {
@@ -1019,7 +1019,6 @@ legend {
 .preorder-right {
   position: relative;
   width: 75%;
-  height: 85%;
 }
 .preorder-right .swiper.is-preimg {
   margin-top: 40px;
@@ -1041,7 +1040,7 @@ legend {
 .prebx-capsule {
   width: 100%;
   aspect-ratio: 1/1;
-  height: 100%;
+  height: 90%;
   border-radius: 150px;
   background: #fff;
 }
@@ -1107,7 +1106,7 @@ legend {
   color: #151515;
 }
 .prebx-capsule-text .capsule-price {
-  margin-top: 20px;
+  margin: 20px 0 80px;
   font-size: 18px;
 }
 .prebx-capsule-text .capsule-price .capsule-price-nego {
@@ -1797,6 +1796,9 @@ legend {
   .container.is-slider .slider_wrap {
     background: url(/images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px 310px/95% 40%;
   }
+  .preorder-right {
+    width: 85%;
+  }
   .eventTab-warp {
     margin: 100px auto 100px;
   }
@@ -1869,6 +1871,9 @@ legend {
   .preorder-left .swiper-slide.is-pretxt .slider_pre_tagline {
     font-size: 16px;
   }
+  .preorder-right {
+    width: 80%;
+  }
   .prebx-capsule {
     height: 90%;
   }
@@ -1926,7 +1931,6 @@ legend {
   }
   .preorder {
     margin-top: 100px;
-    height: 780px;
   }
   .preorder-wrap {
     display: block;
@@ -1954,6 +1958,7 @@ legend {
     margin-left: 20px;
   }
   .prebx-capsule-text .capsule-price {
+    margin: 20px 0 0 0;
     font-size: 15px;
   }
   .prebx-capsule-text .capsule-price .capsule-price-net::after {
@@ -1962,6 +1967,7 @@ legend {
   .preorder-right {
     width: 100%;
     height: auto;
+    margin: 0 0 80px 0;
   }
   .preorder-right .swiper.is-preimg {
     margin: 0;
@@ -1984,7 +1990,7 @@ legend {
   .prebx-wrap {
     display: block;
     width: 100%;
-    height: 100%;
+    margin: 0 auto;
   }
   .prebx-capsule-text {
     display: flex;
@@ -2070,10 +2076,51 @@ legend {
     width: 100%;
   }
   .chart_4-add .chart_4-add-contents .chart_4-add-album {
-    width: auto;
+    width: 540px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .brandshop-wrap .brandshop-header-info2 {
-    right: 30px;
+    font-size: 0;
+  }
+  .brandshop-wrap .brandshop-header-info2::after {
+    content: "+";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: -10px;
+    left: -48px;
+    font-size: 20px;
+    color: #999;
+  }
+  .swiper.is-brand .swiper-slide.is-brand {
+    width: 100%;
+  }
+  .swiper.is-brand .swiper-slide.is-brand .brandshop_circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .swiper.is-brand .swiper-slide.is-brand .brandshop_circle::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+  .swiper.is-brand .swiper-slide.is-brand .brandshop_circle:hover img {
+    opacity: 1;
+  }
+  .swiper.is-brand .swiper-slide.is-brand .brandshop_circle img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2087,6 +2134,7 @@ legend {
     background: none;
   }
   .container.is-slider .slider_wrap {
+    flex-direction: column-reverse;
     align-items: center;
   }
   .container.is-slider .slider_left {
@@ -2140,11 +2188,20 @@ legend {
   .preorder-wrap {
     padding: 30px;
   }
-  .prebx-capsule-text {
-    height: 65%;
+  .prebx-wrap {
+    margin: 0 auto;
+  }
+  .prebx-capsule-text .capsule-sale {
+    font-size: 25px;
+  }
+  .prebx-capsule-text .capsule-sale::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
   }
   .prebx-capsule-text .capsule-title {
-    width: 240px;
+    width: 170px;
+    margin-top: 10px;
   }
   .ktown4u_chart {
     display: none;
