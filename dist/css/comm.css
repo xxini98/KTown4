@@ -1561,20 +1561,32 @@ legend {
 }
 
 .chart_4-add {
+  position: relative;
   width: 49%;
   height: 120px;
   margin-bottom: 20px;
   border-radius: 150px;
   background: white;
 }
+.chart_4-add::after {
+  position: absolute;
+  display: block;
+  font-size: 35px;
+  font-weight: 900;
+  top: 30%;
+  left: 1.5%;
+  margin: 0 30px 0 30px;
+  color: #151515;
+}
 .chart_4-add .chart_4-add-text {
   display: flex;
   width: 100%;
   height: 100%;
   align-items: center;
+  margin-left: 90px;
 }
 .chart_4-add .chart_4-add-rank {
-  display: block;
+  display: none;
   font-size: 40px;
   font-weight: 900;
   margin: 0 30px 0 30px;
@@ -1602,6 +1614,7 @@ legend {
      object-fit: cover;
 }
 .chart_4-add .chart_4-add-contents {
+  width: 100%;
   margin-left: 10px;
 }
 .chart_4-add .chart_4-add-contents .chart_4-add-artist {
@@ -1622,6 +1635,35 @@ legend {
   display: block;
   font-size: 14px;
   color: #555555;
+}
+
+.ch4::after {
+  content: "4";
+}
+
+.ch5::after {
+  content: "5";
+}
+
+.ch6::after {
+  content: "6";
+}
+
+.ch7::after {
+  content: "7";
+}
+
+.ch8::after {
+  content: "8";
+}
+
+.ch9::after {
+  content: "9";
+}
+
+.ch10::after {
+  content: "10";
+  left: 0.5%;
 }
 
 .add .add_text .material-icons-round {
@@ -1821,7 +1863,7 @@ legend {
   .life {
     margin-bottom: 100px;
   }
-  .ktown4u_chart .chart-wrap .chart-right .chart_1-3-wrap {
+  .chart_1-3-wrap {
     margin: 30px 0 80px;
   }
   .chart_4-add .chart_4-add-contents .chart_4-add-album {
@@ -1914,10 +1956,10 @@ legend {
     font-size: 40px;
   }
   .slider_info-top .slider-title-text-nth {
-    font-size: 35px;
+    font-size: 30px;
   }
   .slider_info-top .slider-title-text-albumtit {
-    font-size: 35px;
+    font-size: 30px;
   }
   .slider_info-top .slider_info-text {
     font-size: 14px;
@@ -2018,6 +2060,9 @@ legend {
   }
   .new_life_middle-infomation {
     width: 30%;
+  }
+  .new_life_middle-infomation .new_life_middle-info:hover img {
+    transform: scale(1);
   }
   .new_life-_header-info2 {
     font-size: 0;
@@ -2125,7 +2170,7 @@ legend {
 }
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 20px;
+    padding: 0 30px;
   }
   .wrap {
     margin-top: 0;
@@ -2138,8 +2183,8 @@ legend {
     align-items: center;
   }
   .container.is-slider .slider_left {
-    width: 285px;
-    margin-top: -70px;
+    width: 60%;
+    margin-top: 20px;
   }
   .slider_info-top .slider-title {
     margin-bottom: 20px;
@@ -2152,9 +2197,11 @@ legend {
   }
   .slider_info-top .slider-title-text-nth {
     font-size: 30px;
+    display: inline-block;
   }
   .slider_info-top .slider-title-text-albumtit {
     font-size: 30px;
+    display: inline-block;
   }
   .slider_info-top .slider_info-text {
     font-size: 15px;
@@ -2163,7 +2210,7 @@ legend {
     font-size: 15px;
   }
   .slider_right {
-    width: 55%;
+    width: 65%;
   }
   .slider_right .slide-img::before {
     width: 70px;
@@ -2174,7 +2221,9 @@ legend {
     height: 100px;
   }
   .swiper-arrow-main {
-    top: 320px;
+    top: 220px;
+    left: 250px;
+    z-index: 1;
   }
   .swiper-arrow-next {
     left: 0;
@@ -2203,13 +2252,130 @@ legend {
     width: 170px;
     margin-top: 10px;
   }
-  .ktown4u_chart {
-    display: none;
+  .chart-wrap {
+    padding: 50px;
+  }
+  .chart-right {
+    margin: 40px;
+  }
+  .chart_1-3-wrap {
+    display: block;
+    margin: 0;
+  }
+  .chart_1-3-wrap .chart_capsule {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+  .chart_1-3-wrap .chart_1-3 {
+    margin-bottom: 10px;
+  }
+  .chart_1-3-wrap .chart_1-3::after {
+    display: block;
+    font-size: 35px;
+    font-weight: 900;
+    top: 30%;
+    left: 3%;
+    margin: 0 30px 0 30px;
+    color: #151515;
+  }
+  .ch1::after {
+    content: "1";
+  }
+  .ch2::after {
+    content: "2";
+  }
+  .ch3::after {
+    content: "3";
+  }
+  .chart_capsule-wrap {
+    width: 100%;
+    height: 120px;
+  }
+  .chart_capsule-wrap .chartbx_capsule {
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+  }
+  .chart_capsule-wrap .chartbx_capsule-img {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: hidden;
+    box-shadow: none;
+  }
+  .chart_capsule-wrap .chartbx_capsule-text {
+    width: auto;
+    height: auto;
+    text-align: left;
+    margin: 0 0 0 10px;
+  }
+  .chart_capsule-wrap .chartbx_capsule-text .chartbx_capsule-artist {
+    position: static;
+    display: block;
+    font-weight: 900;
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #151515;
+  }
+  .chart_capsule-wrap .chartbx_capsule-text .chartbx_capsule-albumtitle {
+    display: block;
+    width: 430px;
+    height: auto;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .chart_capsule-wrap .chartbx_capsule-text .chartbx_capsule-albumtitle br {
+    display: inline-block;
+    content: " ";
+    padding: 0 2px;
+  }
+  .chart_capsule-wrap .chartbx_capsule-text .chartbx_capsule-release br {
+    display: inline-block;
+    content: " ";
+    padding: 0 2px;
+  }
+  .chart_4-add .chart_4-add-contents .chart_4-add-album {
+    width: 430px;
   }
 }
 @media screen and (max-width: 428px) {
   .container {
-    padding: 0 20px;
+    padding: 0 30px;
+  }
+  .container.is-slider .slider_left {
+    width: 100%;
+  }
+  .slider_info-top .slider_tagline {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .slider_info-top .slider-title-text-artist {
+    font-size: 30px;
+  }
+  .slider_info-top .slider-title-text-nth {
+    font-size: 25px;
+  }
+  .slider_info-top .slider-title-text-albumtit {
+    font-size: 25px;
+  }
+  .slider_info-middle .slider_info-text {
+    font-size: 14px;
+  }
+  .slider_right {
+    width: 85%;
+  }
+  .swiper-arrow-main {
+    top: 190px;
+    left: 218px;
   }
 }
 .itemview-main {
