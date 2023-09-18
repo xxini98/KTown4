@@ -1024,9 +1024,6 @@ legend {
   margin-top: 40px;
   height: 100%;
 }
-.preorder-right .swiper-slide.is-preimg {
-  height: 100%;
-}
 .preorder-right .swiper-wrapper.is-preimg {
   display: flex;
 }
@@ -1040,7 +1037,6 @@ legend {
 .prebx-capsule {
   width: 100%;
   aspect-ratio: 1/1;
-  height: 90%;
   border-radius: 150px;
   background: #fff;
 }
@@ -1069,11 +1065,9 @@ legend {
 }
 
 .prebx-capsule-text {
-  display: flex;
+  height: 70%;
   margin-top: 20px;
-  flex-direction: column;
   text-align: center;
-  align-items: center;
 }
 .prebx-capsule-text .capsule-sale {
   position: relative;
@@ -1085,7 +1079,7 @@ legend {
 .prebx-capsule-text .capsule-sale::after {
   content: "";
   position: absolute;
-  bottom: 12px;
+  bottom: 5px;
   left: 0;
   width: 70px;
   height: 5px;
@@ -1094,9 +1088,9 @@ legend {
   background: #01c3cc;
 }
 .prebx-capsule-text .capsule-title {
-  margin-top: 5px;
   font-weight: 400;
   font-size: 14px;
+  margin: 5px auto;
   width: 200px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -1405,24 +1399,20 @@ legend {
 .chart_1-3-wrap .chart_1-3 {
   position: relative;
   width: 100%;
-  height: 100%;
 }
 .chart_1-3-wrap .chart_capsule {
   width: 100%;
-  height: 100%;
 }
 
 .chart_capsule-wrap {
   display: block;
   width: 90%;
-  height: 100%;
   margin: 0 auto;
   border-radius: 150px;
   background: #fff;
 }
 .chart_capsule-wrap .chartbx_capsule {
   width: 100%;
-  height: 100%;
   aspect-ratio: 1/1;
 }
 .chart_capsule-wrap .chartbx_capsule-img {
@@ -1916,9 +1906,6 @@ legend {
   .preorder-right {
     width: 80%;
   }
-  .prebx-capsule {
-    height: 90%;
-  }
   .new_life {
     margin-top: 100px;
   }
@@ -1930,9 +1917,6 @@ legend {
   }
   .life {
     margin-bottom: 100px;
-  }
-  .chart_capsule-wrap .chartbx_capsule-text {
-    height: 80%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -2006,6 +1990,9 @@ legend {
   .prebx-capsule-text .capsule-price .capsule-price-net::after {
     width: 65px;
   }
+  .prebx-capsule-text .capsule-sale::after {
+    bottom: 12px;
+  }
   .preorder-right {
     width: 100%;
     height: auto;
@@ -2016,11 +2003,9 @@ legend {
   }
   .preorder-right .swiper-slide.is-preimg {
     margin-top: 20px;
-    height: auto;
   }
   .preorder-right .swiper-wrapper.is-preimg {
     display: flex;
-    height: auto;
   }
   .preorder-right .swiper-slide.is-preimg {
     height: 80%;
@@ -2183,7 +2168,7 @@ legend {
     align-items: center;
   }
   .container.is-slider .slider_left {
-    width: 60%;
+    width: 70%;
     margin-top: 20px;
   }
   .slider_info-top .slider-title {
@@ -2240,11 +2225,15 @@ legend {
   .prebx-wrap {
     margin: 0 auto;
   }
+  .preorder-right {
+    margin: 0;
+  }
   .prebx-capsule-text .capsule-sale {
     font-size: 25px;
   }
   .prebx-capsule-text .capsule-sale::after {
     left: 50%;
+    bottom: 8px;
     transform: translateX(-50%);
     width: 60px;
   }
@@ -2294,6 +2283,7 @@ legend {
   }
   .chart_capsule-wrap .chartbx_capsule {
     display: flex;
+    height: 100%;
     align-items: center;
     margin-left: 90px;
   }
@@ -2376,6 +2366,82 @@ legend {
   .swiper-arrow-main {
     top: 190px;
     left: 218px;
+  }
+  .preorder-wrap {
+    padding: 30px;
+  }
+  .prebx-wrap {
+    width: 80%;
+  }
+  .new_life-_header-info2::after {
+    top: 0px;
+  }
+  .new_life_middle-infomation {
+    width: 48%;
+  }
+  .new_life-header_taginfo {
+    width: 66%;
+    display: inline-block;
+    text-align: center;
+  }
+  .life .new_life-header_taginfo {
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+  }
+  .nl-info .nl-img {
+    border-radius: 50px;
+  }
+  .nl-info .nl-img img {
+    border-radius: 50px;
+  }
+  .chart_4-add .chart_4-add-contents .chart_4-add-release {
+    display: none;
+  }
+  .chart_4-add .chart_4-add-contents .chart_4-add-album {
+    width: 160px;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .chart_4-add .chart_4-add-text {
+    margin-left: 60px;
+  }
+  .chart_4-add::after {
+    font-size: 25px;
+    top: 35%;
+    left: 0;
+  }
+  .chart_1-3-wrap .chart_1-3::after {
+    font-size: 25px;
+    top: 35%;
+  }
+  .ch10::after {
+    left: -10px;
+  }
+  .chart_capsule-wrap .chartbx_capsule {
+    margin-left: 60px;
+  }
+  .chart_capsule-wrap .chartbx_capsule-text .chartbx_capsule-albumtitle br {
+    display: block;
+    content: " ";
+    padding: 0 2px;
+  }
+  .chart_capsule-wrap .chartbx_capsule-text .chartbx_capsule-release {
+    display: none;
+  }
+  .chart_capsule-wrap .chartbx_capsule-text .chartbx_capsule-albumtitle {
+    width: 190px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 }
 .itemview-main {
