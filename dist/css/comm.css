@@ -705,8 +705,11 @@ legend {
   position: absolute;
   top: 440px;
   left: 0px;
-  display: flex;
   color: #eee;
+}
+.swiper-arrow-main .swiper-arrows {
+  position: relative;
+  display: flex;
 }
 .swiper-arrow-main .swiper-main-prev {
   position: relative;
@@ -714,7 +717,6 @@ legend {
   height: 45px;
   border: 1px solid #555555;
   border-radius: 50%;
-  margin-right: 60px;
   color: #555555;
   font-size: 16px;
   cursor: pointer;
@@ -728,9 +730,11 @@ legend {
   font-size: 30px;
 }
 .swiper-arrow-main .swiper-main-next {
-  position: relative;
+  position: absolute;
   width: 45px;
   height: 45px;
+  top: 0;
+  left: 120px;
   border: 1px solid #555555;
   border-radius: 50%;
   color: #555555;
@@ -1570,10 +1574,9 @@ legend {
 }
 .chart_4-add .chart_4-add-text {
   display: flex;
-  width: 100%;
   height: 100%;
   align-items: center;
-  margin-left: 90px;
+  padding-left: 90px;
 }
 .chart_4-add .chart_4-add-rank {
   display: none;
@@ -2104,6 +2107,7 @@ legend {
   }
   .chart_4-add {
     width: 100%;
+    overflow: hidden;
   }
   .chart_4-add .chart_4-add-contents .chart_4-add-album {
     width: 540px;
@@ -2186,7 +2190,7 @@ legend {
   }
   .slider_info-top .slider-title-text-albumtit {
     font-size: 30px;
-    display: inline-block;
+    display: block;
   }
   .slider_info-top .slider_info-text {
     font-size: 15px;
@@ -2206,9 +2210,12 @@ legend {
     height: 100px;
   }
   .swiper-arrow-main {
-    top: 220px;
-    left: 250px;
+    top: 254px;
+    left: 210px;
     z-index: 1;
+  }
+  .swiper-arrow-main .swiper-main-next {
+    left: 100px;
   }
   .swiper-arrow-next {
     left: 0;
@@ -2253,7 +2260,7 @@ legend {
   }
   .chart_1-3-wrap .chart_capsule {
     position: relative;
-    width: auto;
+    width: 100%;
     height: auto;
   }
   .chart_1-3-wrap .chart_1-3 {
@@ -2280,12 +2287,14 @@ legend {
   .chart_capsule-wrap {
     width: 100%;
     height: 120px;
+    overflow: hidden;
   }
   .chart_capsule-wrap .chartbx_capsule {
     display: flex;
+    width: auto;
     height: 100%;
     align-items: center;
-    margin-left: 90px;
+    padding-left: 90px;
   }
   .chart_capsule-wrap .chartbx_capsule-img {
     position: relative;
@@ -2299,7 +2308,7 @@ legend {
     box-shadow: none;
   }
   .chart_capsule-wrap .chartbx_capsule-text {
-    width: auto;
+    width: 60%;
     height: auto;
     text-align: left;
     margin: 0 0 0 10px;
@@ -2314,7 +2323,7 @@ legend {
   }
   .chart_capsule-wrap .chartbx_capsule-text .chartbx_capsule-albumtitle {
     display: block;
-    width: 430px;
+    width: 100%;
     height: auto;
     font-weight: 700;
     overflow: hidden;
@@ -2334,7 +2343,14 @@ legend {
     padding: 0 2px;
   }
   .chart_4-add .chart_4-add-contents .chart_4-add-album {
-    width: 430px;
+    display: block;
+    width: 80%;
+  }
+  .chart_4-add .chart_4-add-contents .chart_4-add-release {
+    display: none;
+  }
+  .chart_capsule-wrap .chartbx_capsule-text .chartbx_capsule-release {
+    display: none;
   }
 }
 @media screen and (max-width: 428px) {
@@ -2364,8 +2380,8 @@ legend {
     width: 85%;
   }
   .swiper-arrow-main {
-    top: 190px;
-    left: 218px;
+    top: 220px;
+    left: 200px;
   }
   .preorder-wrap {
     padding: 30px;
@@ -2395,6 +2411,9 @@ legend {
   .nl-info .nl-img img {
     border-radius: 50px;
   }
+  .chart-wrap {
+    padding: 50px 30px;
+  }
   .chart_4-add .chart_4-add-contents .chart_4-add-release {
     display: none;
   }
@@ -2408,9 +2427,6 @@ legend {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
   }
-  .chart_4-add .chart_4-add-text {
-    margin-left: 60px;
-  }
   .chart_4-add::after {
     font-size: 25px;
     top: 35%;
@@ -2422,9 +2438,6 @@ legend {
   }
   .ch10::after {
     left: -10px;
-  }
-  .chart_capsule-wrap .chartbx_capsule {
-    margin-left: 60px;
   }
   .chart_capsule-wrap .chartbx_capsule-text .chartbx_capsule-albumtitle br {
     display: block;
@@ -2442,6 +2455,20 @@ legend {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+  }
+  .brandshop-wrap .brandshop-header {
+    margin-bottom: 50px;
+  }
+  .brandshop-header_taginfo {
+    width: 100%;
+  }
+  .brandshop-header-info1 {
+    display: block;
+    margin: 0 auto;
+    width: 56%;
+  }
+  .brandshop-wrap .brandshop-header-info2::after {
+    top: 5px;
   }
 }
 .itemview-main {

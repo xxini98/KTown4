@@ -71,15 +71,18 @@
   position: absolute;
   top: 440px;
   left: 0px;
-  display: flex;
   color: $gray-e;
+  .swiper-arrows {
+    position: relative;
+    display: flex;
+  }
   .swiper-main-prev {
     position: relative;
     width: 45px;
     height: 45px;
     border: 1px solid $c2;
     border-radius: 50%;
-    margin-right: 60px;
+    // margin-right: 60px;
     color: $c2;
     font-size: 16px;
     cursor: pointer;
@@ -93,9 +96,11 @@
     }
   }
   .swiper-main-next {
-    position: relative;
+    position: absolute;
     width: 45px;
     height: 45px;
+    top: 0;
+    left: 120px;
     border: 1px solid $c2;
     border-radius: 50%;
     color: $c2;
@@ -938,10 +943,9 @@
   }
   .chart_4-add-text {
     display: flex;
-    width: 100%;
     height: 100%;
     align-items: center;
-    margin-left: 90px;
+    padding-left: 90px;
   }
   .chart_4-add-rank {
     display: none;
@@ -1503,6 +1507,7 @@
   }
   .chart_4-add {
     width: 100%;
+    overflow: hidden;
     .chart_4-add-contents {
       .chart_4-add-album {
         width: 540px;
@@ -1594,7 +1599,7 @@
     }
     .slider-title-text-albumtit {
       font-size: 30px;
-      display: inline-block;
+      display: block;
     }
     .slider_info-text {
       font-size: 15px;
@@ -1620,9 +1625,12 @@
   }
 
   .swiper-arrow-main {
-    top: 220px;
-    left: 250px;
+    top: 254px;
+    left: 210px;
     z-index: 1;
+    .swiper-main-next {
+      left: 100px;
+    }
   }
 
   .swiper-arrow-next {
@@ -1670,7 +1678,7 @@
     margin: 0;
     .chart_capsule {
       position: relative;
-      width: auto;
+      width: 100%;
       height: auto;
     }
     .chart_1-3 {
@@ -1698,11 +1706,13 @@
   .chart_capsule-wrap {
     width: 100%;
     height: 120px;
+    overflow: hidden;
     .chartbx_capsule {
       display: flex;
+      width: auto;
       height: 100%;
       align-items: center;
-      margin-left: 90px;
+      padding-left: 90px;
     }
     .chartbx_capsule-img {
       position: relative;
@@ -1715,7 +1725,7 @@
       box-shadow: none;
     }
     .chartbx_capsule-text {
-      width: auto;
+      width: 60%;
       height: auto;
       text-align: left;
       margin: 0 0 0 10px;
@@ -1729,7 +1739,7 @@
       }
       .chartbx_capsule-albumtitle {
         display: block;
-        width: 430px;
+        width: 100%;
         height: auto;
         font-weight: 700;
         overflow: hidden;
@@ -1753,7 +1763,14 @@
     }
   }
   .chart_4-add .chart_4-add-contents .chart_4-add-album {
-    width: 430px;
+    display: block;
+    width: 80%;
+  }
+  .chart_4-add .chart_4-add-contents .chart_4-add-release {
+    display: none;
+  }
+  .chart_capsule-wrap .chartbx_capsule-text .chartbx_capsule-release {
+    display: none;
   }
 }
 
@@ -1790,8 +1807,8 @@
     width: 85%;
   }
   .swiper-arrow-main {
-    top: 190px;
-    left: 218px;
+    top: 220px;
+    left: 200px;
   }
   .preorder-wrap {
     padding: 30px;
@@ -1827,6 +1844,9 @@
       }
     }
   }
+  .chart-wrap {
+    padding: 50px 30px;
+  }
   .chart_4-add {
     .chart_4-add-contents {
       .chart_4-add-release {
@@ -1844,7 +1864,7 @@
       }
     }
     .chart_4-add-text {
-      margin-left: 60px;
+      //   margin-left: 60px;
     }
     &::after {
       font-size: 25px;
@@ -1861,7 +1881,7 @@
   }
   .chart_capsule-wrap {
     .chartbx_capsule {
-      margin-left: 60px;
+      //   margin-left: 60px;
     }
     .chartbx_capsule-text {
       .chartbx_capsule-albumtitle {
@@ -1884,5 +1904,19 @@
         -webkit-line-clamp: 2;
       }
     }
+  }
+  .brandshop-wrap .brandshop-header {
+    margin-bottom: 50px;
+  }
+  .brandshop-header_taginfo {
+    width: 100%;
+  }
+  .brandshop-header-info1 {
+    display: block;
+    margin: 0 auto;
+    width: 56%;
+  }
+  .brandshop-wrap .brandshop-header-info2::after {
+    top: 5px;
   }
 }

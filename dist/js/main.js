@@ -84,7 +84,7 @@ $(function () {
     });
 
     let brandSwiper = new Swiper('.swiper.is-brand', {
-        slidesPerView: 5,
+        slidesPerView: 3,
         spaceBetween: 30,
         loop: true,
         grabCursor: true,
@@ -92,5 +92,15 @@ $(function () {
             el: '.swiper-scrollbar',
             hide: true,
         },
+        breakpoints: {
+            767: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1023: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+        }
     });
 });
