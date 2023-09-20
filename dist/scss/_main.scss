@@ -10,7 +10,6 @@
       95% 40%;
   }
 }
-
 .slider_left {
   position: relative;
   width: 40%;
@@ -72,6 +71,7 @@
   top: 440px;
   left: 0px;
   color: $gray-e;
+  z-index: 1;
   .swiper-arrows {
     position: relative;
     display: flex;
@@ -241,16 +241,14 @@
   display: flex;
   width: 100%;
   height: 200px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  justify-content: space-between;
 }
 .evenTab {
   position: relative;
-  width: 25%;
+  width: 23%;
   height: 100%;
   padding-right: 20px;
   border-radius: 50px;
-  margin: 0 10px;
   &:hover .eventcontent img {
     opacity: 0.1;
   }
@@ -348,7 +346,6 @@
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  padding-bottom: 90px;
 }
 
 .preorder-left {
@@ -365,7 +362,6 @@
   }
   .swiper-slide.is-pretxt {
     width: 245px;
-    margin-top: 40px;
     .slider_tag {
       font-weight: 400;
       font-size: 18px;
@@ -402,10 +398,7 @@
   position: relative;
   width: 75%;
   //   height: 85%;
-  .swiper.is-preimg {
-    margin-top: 40px;
-    height: 100%;
-  }
+
   .swiper-wrapper.is-preimg {
     display: flex;
   }
@@ -478,7 +471,7 @@
     color: $c1;
   }
   .capsule-price {
-    margin: 20px 0 80px;
+    margin-top: 20px;
     font-size: 18px;
     .capsule-price-nego {
       font-weight: 900;
@@ -565,6 +558,7 @@
   .ad_kt4_img {
     width: 100%;
     height: 100%;
+    padding: 0;
     .desktop_img {
       width: 100%;
       height: 100%;
@@ -576,9 +570,6 @@
   }
 }
 
-.new_life {
-  margin-top: 100px;
-}
 .new_life-wrap {
   position: relative;
   width: 100%;
@@ -586,7 +577,6 @@
 .new_life-header {
   position: relative;
   display: flex;
-  margin-bottom: 80px;
   flex-direction: column;
   align-items: center;
   .new_life-header_tagline {
@@ -610,7 +600,7 @@
 }
 .new_life_middle-infomation {
   width: 23%;
-  margin-bottom: 70px;
+  margin-top: 70px;
 }
 .new_life_middle-info {
   &:hover img {
@@ -721,10 +711,6 @@
   top: 108px;
 }
 
-.life {
-  margin-bottom: 100px;
-}
-
 .ktown4u_chart {
   width: 100%;
   background: $gray-f;
@@ -737,7 +723,6 @@
 }
 .chart-left {
   width: 20%;
-  margin-top: 80px;
   .chart_tit {
     position: relative;
     font-size: 16px;
@@ -755,15 +740,14 @@
 }
 .chart-right {
   width: 79%;
-  margin: 80px 0;
 }
 .chart_1-3-wrap {
   margin: 65px 0 80px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   .chart_1-3 {
     position: relative;
-    width: 100%;
+    width: 30%;
   }
   .chart_capsule {
     width: 100%;
@@ -771,7 +755,7 @@
 }
 .chart_capsule-wrap {
   display: block;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 150px;
   background: $w;
@@ -1038,7 +1022,6 @@
 .ktown4u_offline {
   width: 100%;
   height: 300px;
-  margin-bottom: 80px;
   .ktown4u_offline-wrap {
     display: flex;
     width: 100%;
@@ -1100,7 +1083,6 @@
 .brandshop-wrap {
   position: relative;
   width: 100%;
-  margin-bottom: 85px;
   .brandshop-header {
     position: relative;
     display: flex;
@@ -1370,7 +1352,7 @@
   }
   .prebx-capsule-text {
     .capsule-price {
-      margin: 20px 0 0 0;
+      margin-top: 20px;
       font-size: 15px;
       .capsule-price-net {
         &::after {

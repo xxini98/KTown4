@@ -1,6 +1,6 @@
 <header>
   <div id="hd_wrapper">
-    <div class="hd_inner">
+    <div class="widget js-sticky-widget">
       <div class="inner">
         <div id="logo">
           <a href="https://xxini.me/KT4">Ktwon4u - 케이타운포유</a>
@@ -54,27 +54,4 @@
     </div>
   </div>
 
-  <script>
-    let slidebar = document.getElementById("hd_wrapper")[0];
-    let slidebar_content = document.getElementById("hd_inner")[0];
-
-    console.log("slidebar")
-
-    window.onscroll = () => {
-      let scrollTop = window.scrollY;
-      let viewportHeight = window.innerHeight;
-      let contentHeight = slidebar_content.getBoundingClientRect().height;
-      let slidebarTop =
-        slidebar.getBoundingClientRect().top + window.pageYOffset;
-
-      if (scrollTop >= contentHeight - viewportHeight + slidebarTop) {
-        slidebar_content.style.transform =
-          "translateY(-${contentHeight - viewportHeight + sidebarTop}px)";
-        slidebar_content.style.postion = "fixed";
-      } else {
-        slidebar_content.style.transform = "";
-        slidebar_content.style.postion = "";
-      }
-    };
-  </script>
 </header>

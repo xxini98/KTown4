@@ -221,7 +221,7 @@ input[type=password] {
 }
 
 #u-skip a:focus {
-  top: 0;
+  top: -620px;
   opacity: 1;
   z-index: 1000;
 }
@@ -315,17 +315,20 @@ legend {
 
 .container {
   max-width: 1280px;
+  padding: 80px 0;
   margin: 0 auto;
 }
 
-#hd_wrapper {
-  width: 100%;
+.fixed-nav .widget {
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 30px;
+  z-index: 1;
 }
 
-.inner {
-  display: flex;
-  justify-content: space-between;
+.widget {
+  padding: 30px;
 }
 
 #logo a {
@@ -342,11 +345,9 @@ legend {
 
 #gnb {
   display: inline-block;
-  position: relative;
   margin-top: 50px;
 }
 #gnb h2 {
-  position: absolute;
   font-size: 0;
   line-height: 0;
   overflow: hidden;
@@ -706,6 +707,7 @@ legend {
   top: 440px;
   left: 0px;
   color: #eee;
+  z-index: 1;
 }
 .swiper-arrow-main .swiper-arrows {
   position: relative;
@@ -866,17 +868,15 @@ legend {
   display: flex;
   width: 100%;
   height: 200px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  justify-content: space-between;
 }
 
 .evenTab {
   position: relative;
-  width: 25%;
+  width: 23%;
   height: 100%;
   padding-right: 20px;
   border-radius: 50px;
-  margin: 0 10px;
 }
 .evenTab:hover .eventcontent img {
   opacity: 0.1;
@@ -970,7 +970,6 @@ legend {
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  padding-bottom: 90px;
 }
 
 .preorder-left {
@@ -988,7 +987,6 @@ legend {
 }
 .preorder-left .swiper-slide.is-pretxt {
   width: 245px;
-  margin-top: 40px;
 }
 .preorder-left .swiper-slide.is-pretxt .slider_tag {
   font-weight: 400;
@@ -1023,10 +1021,6 @@ legend {
 .preorder-right {
   position: relative;
   width: 75%;
-}
-.preorder-right .swiper.is-preimg {
-  margin-top: 40px;
-  height: 100%;
 }
 .preorder-right .swiper-wrapper.is-preimg {
   display: flex;
@@ -1104,7 +1098,7 @@ legend {
   color: #151515;
 }
 .prebx-capsule-text .capsule-price {
-  margin: 20px 0 80px;
+  margin-top: 20px;
   font-size: 18px;
 }
 .prebx-capsule-text .capsule-price .capsule-price-nego {
@@ -1196,6 +1190,7 @@ legend {
 .ad_kt4 .ad_kt4_img {
   width: 100%;
   height: 100%;
+  padding: 0;
 }
 .ad_kt4 .ad_kt4_img .desktop_img {
   width: 100%;
@@ -1207,10 +1202,6 @@ legend {
   display: none;
 }
 
-.new_life {
-  margin-top: 100px;
-}
-
 .new_life-wrap {
   position: relative;
   width: 100%;
@@ -1219,7 +1210,6 @@ legend {
 .new_life-header {
   position: relative;
   display: flex;
-  margin-bottom: 80px;
   flex-direction: column;
   align-items: center;
 }
@@ -1245,7 +1235,7 @@ legend {
 
 .new_life_middle-infomation {
   width: 23%;
-  margin-bottom: 70px;
+  margin-top: 70px;
 }
 
 .new_life_middle-info:hover img {
@@ -1355,10 +1345,6 @@ legend {
   top: 108px;
 }
 
-.life {
-  margin-bottom: 100px;
-}
-
 .ktown4u_chart {
   width: 100%;
   background: #fafafa;
@@ -1373,7 +1359,6 @@ legend {
 
 .chart-left {
   width: 20%;
-  margin-top: 80px;
 }
 .chart-left .chart_tit {
   position: relative;
@@ -1392,17 +1377,16 @@ legend {
 
 .chart-right {
   width: 79%;
-  margin: 80px 0;
 }
 
 .chart_1-3-wrap {
   margin: 65px 0 80px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .chart_1-3-wrap .chart_1-3 {
   position: relative;
-  width: 100%;
+  width: 30%;
 }
 .chart_1-3-wrap .chart_capsule {
   width: 100%;
@@ -1410,7 +1394,7 @@ legend {
 
 .chart_capsule-wrap {
   display: block;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 150px;
   background: #fff;
@@ -1674,7 +1658,6 @@ legend {
 .ktown4u_offline {
   width: 100%;
   height: 300px;
-  margin-bottom: 80px;
 }
 .ktown4u_offline .ktown4u_offline-wrap {
   display: flex;
@@ -1732,7 +1715,6 @@ legend {
 .brandshop-wrap {
   position: relative;
   width: 100%;
-  margin-bottom: 85px;
 }
 .brandshop-wrap .brandshop-header {
   position: relative;
@@ -1987,7 +1969,7 @@ legend {
     margin-left: 20px;
   }
   .prebx-capsule-text .capsule-price {
-    margin: 20px 0 0 0;
+    margin-top: 20px;
     font-size: 15px;
   }
   .prebx-capsule-text .capsule-price .capsule-price-net::after {
