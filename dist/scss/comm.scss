@@ -30,7 +30,7 @@
   display: block;
   width: 200px;
   height: 60px;
-  background: url(/images/comm/LOGO-MAIN.png) 0 50% / contain no-repeat;
+  background: url(../../images/comm/LOGO-MAIN.png) 0 50% / contain no-repeat;
   text-indent: -9999px;
 }
 .sound_only {
@@ -166,7 +166,7 @@
             left: 11px;
             width: 50px;
             height: 50px;
-            background: url(/images/comm/logo-cj.svg) no-repeat;
+            background: url(../../images/comm/logo-cj.svg) no-repeat;
             background-size: 100% auto;
             background-position: center top;
           }
@@ -179,7 +179,7 @@
             left: 10px;
             width: 50px;
             height: 50px;
-            background: url(/images/comm/logo-hanjin.svg) no-repeat;
+            background: url(../../images/comm/logo-hanjin.svg) no-repeat;
             background-size: 70% auto;
             background-position: center top;
           }
@@ -192,7 +192,7 @@
             left: 10px;
             width: 50px;
             height: 50px;
-            background: url(/images/comm/logo-hanter.svg) no-repeat;
+            background: url(../../images/comm/logo-hanter.svg) no-repeat;
             background-size: 100% auto;
             background-position: center top;
           }
@@ -205,13 +205,16 @@
             left: 10px;
             width: 50px;
             height: 50px;
-            background: url(/images/comm/logo-circle.svg) no-repeat;
+            background: url(../../images/comm/logo-circle.svg) no-repeat;
             background-size: 100% auto;
           }
         }
       }
     }
   }
+}
+.ft_sec.container{
+  padding: 40px 0;
 }
 .footer_second-wrap {
   width: 100%;
@@ -224,7 +227,7 @@
     .fi_sec-ul {
       width: 100%;
       height: 100%;
-      padding: 40px 0;
+
     }
     .ft_sec-li {
       position: relative;
@@ -310,7 +313,7 @@
               left: 8px;
               width: 20px;
               height: 20px;
-              background: url(/images/comm/x-icon.svg) no-repeat 0 0;
+              background: url(../../images/comm/x-icon.svg) no-repeat 0 0;
               background-size: 100% auto;
             }
           }
@@ -322,7 +325,7 @@
               left: 8px;
               width: 20px;
               height: 20px;
-              background: url(/images/comm/youtube-icon.svg) no-repeat 0 0;
+              background: url(../../images/comm/youtube-icon.svg) no-repeat 0 0;
               background-size: 100% auto;
             }
           }
@@ -334,7 +337,7 @@
               left: 8px;
               width: 20px;
               height: 20px;
-              background: url(/images/comm/insta-icon.svg) no-repeat 0 0;
+              background: url(../../images/comm/insta-icon.svg) no-repeat 0 0;
               background-size: 100% auto;
             }
           }

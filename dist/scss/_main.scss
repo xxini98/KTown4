@@ -375,7 +375,7 @@
       margin-bottom: 10px;
     }
     .slider_pre-info {
-      width: 225px;
+      width: 70%;
       font-weight: 400;
       font-size: 16px;
       color: $c2;
@@ -734,7 +734,7 @@
       display: block;
       width: 225px;
       height: 25px;
-      background: url(/images/main/chart.svg) no-repeat 0 0 / cover;
+      background: url(../../images/main/chart.svg) no-repeat 0 0 / cover;
     }
   }
 }
@@ -1028,7 +1028,7 @@
     height: 100%;
     vertical-align: middle;
     opacity: 1;
-    background: url(/images/main/1층-3.jpg) no-repeat;
+    background: url(../../images/main/1F-3.jpg) no-repeat;
     background-position: -42%, 10%;
     background-size: cover;
     background-attachment: fixed;

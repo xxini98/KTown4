@@ -335,7 +335,7 @@ legend {
   display: block;
   width: 200px;
   height: 60px;
-  background: url(/images/comm/LOGO-MAIN.png) 0 50%/contain no-repeat;
+  background: url(../../images/comm/LOGO-MAIN.png) 0 50%/contain no-repeat;
   text-indent: -9999px;
 }
 
@@ -466,7 +466,7 @@ legend {
   left: 11px;
   width: 50px;
   height: 50px;
-  background: url(/images/comm/logo-cj.svg) no-repeat;
+  background: url(../../images/comm/logo-cj.svg) no-repeat;
   background-size: 100% auto;
   background-position: center top;
 }
@@ -477,7 +477,7 @@ legend {
   left: 10px;
   width: 50px;
   height: 50px;
-  background: url(/images/comm/logo-hanjin.svg) no-repeat;
+  background: url(../../images/comm/logo-hanjin.svg) no-repeat;
   background-size: 70% auto;
   background-position: center top;
 }
@@ -488,7 +488,7 @@ legend {
   left: 10px;
   width: 50px;
   height: 50px;
-  background: url(/images/comm/logo-hanter.svg) no-repeat;
+  background: url(../../images/comm/logo-hanter.svg) no-repeat;
   background-size: 100% auto;
   background-position: center top;
 }
@@ -499,8 +499,12 @@ legend {
   left: 10px;
   width: 50px;
   height: 50px;
-  background: url(/images/comm/logo-circle.svg) no-repeat;
+  background: url(../../images/comm/logo-circle.svg) no-repeat;
   background-size: 100% auto;
+}
+
+.ft_sec.container {
+  padding: 40px 0;
 }
 
 .footer_second-wrap {
@@ -516,7 +520,6 @@ legend {
 .footer_second-wrap .ft_sec .fi_sec-ul {
   width: 100%;
   height: 100%;
-  padding: 40px 0;
 }
 .footer_second-wrap .ft_sec .ft_sec-li {
   position: relative;
@@ -599,7 +602,7 @@ legend {
   left: 8px;
   width: 20px;
   height: 20px;
-  background: url(/images/comm/x-icon.svg) no-repeat 0 0;
+  background: url(../../images/comm/x-icon.svg) no-repeat 0 0;
   background-size: 100% auto;
 }
 .footer_second-wrap .ft_sec .ft_sec-sns .ft_sns-ul .ft_sns .fts2::after {
@@ -609,7 +612,7 @@ legend {
   left: 8px;
   width: 20px;
   height: 20px;
-  background: url(/images/comm/youtube-icon.svg) no-repeat 0 0;
+  background: url(../../images/comm/youtube-icon.svg) no-repeat 0 0;
   background-size: 100% auto;
 }
 .footer_second-wrap .ft_sec .ft_sec-sns .ft_sns-ul .ft_sns .fts3::after {
@@ -619,7 +622,7 @@ legend {
   left: 8px;
   width: 20px;
   height: 20px;
-  background: url(/images/comm/insta-icon.svg) no-repeat 0 0;
+  background: url(../../images/comm/insta-icon.svg) no-repeat 0 0;
   background-size: 100% auto;
 }
 .footer_second-wrap .ft_sec .ft_sec-sns .ft_sns-ul .ft_sns:last-child {
@@ -1001,7 +1004,7 @@ legend {
   margin-bottom: 10px;
 }
 .preorder-left .swiper-slide.is-pretxt .slider_pre-info {
-  width: 225px;
+  width: 70%;
   font-weight: 400;
   font-size: 16px;
   color: #555555;
@@ -1372,7 +1375,7 @@ legend {
   display: block;
   width: 225px;
   height: 25px;
-  background: url(/images/main/chart.svg) no-repeat 0 0/cover;
+  background: url(../../images/main/chart.svg) no-repeat 0 0/cover;
 }
 
 .chart-right {
@@ -1665,7 +1668,7 @@ legend {
   height: 100%;
   vertical-align: middle;
   opacity: 1;
-  background: url(/images/main/1층-3.jpg) no-repeat;
+  background: url(../../images/main/1F-3.jpg) no-repeat;
   background-position: -42%, 10%;
   background-size: cover;
   background-attachment: fixed;
