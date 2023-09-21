@@ -98,6 +98,10 @@ $(function () {
         spaceBetween: 20,
       },
       1023: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+      },
+      1279: {
         slidesPerView: 6,
         spaceBetween: 57,
       },
