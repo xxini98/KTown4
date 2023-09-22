@@ -345,6 +345,79 @@
     }
   }
 }
+  @media screen and (max-width: 1280px) {
+    .ft_sec.container {
+      padding: 50px;
+    }
+    .footer_second-wrap .ft_sec .ft_sec-sns {
+      top: 50px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .ft_sec.container {
+      padding: 50px 30px;
+    }
+    .ft_cscenter {
+      width: 20%;
+    }
+    .ft_community {
+      width: 30%;
+    }
+    .footer_first-wrap .ft_company .ft_company-ul {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .footer_first-wrap .ft_company .ft_company-ul .ft_company-li {
+      width: 20%;
+      margin-right: 0;
+    }
+    .footer_first-wrap .ft_company .ft_company-ul .ft_company-li a {
+      width: auto;
+    }
+    .footer_second-wrap .ft_sec .ft_sec-sns {
+      top: 50px;
+      right: 30px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .footer_first-wrap .ft_cscenter {
+      width: 30%;
+    }
+    .footer_first-wrap .ft_community .ft_com-ul {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    .footer_first-wrap .ft_community .ft_com-ul .ft_com-li {
+      width: 60%;
+      margin-bottom: 15px;
+    }
+    .footer_first-wrap .ft_company {
+      width: 30%;
+    }
+    .footer_first-wrap .ft_company .ft_company-ul {
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .footer_first-wrap .ft_company .ft_company-ul .ft_company-li a {
+      display: flex;
+      width: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer_first-wrap .ft_company .ft_company-ul .ft_company-li {
+      width: 50%;
+      margin-right: 0;
+    }
+    .footer_first-wrap
+      .ft_company
+      .ft_company-ul
+      .ft_company-li
+      .ft_company-icon {
+      margin: 0;
+    }
+  }
+
 // 공통
 
 @import "main", "contents";
