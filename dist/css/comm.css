@@ -24,10 +24,7 @@
   font-style: normal;
   font-weight: 400;
   src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"),
-    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
-    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
-    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
 /* reset */
 body,
@@ -121,43 +118,43 @@ body {
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input[type="text"],
-input[type="password"],
-input[type="submit"],
-input[type="search"] {
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=search] {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 0;
 }
 
-input:checked[type="checkbox"] {
+input:checked[type=checkbox] {
   background-color: #666;
   -webkit-appearance: checkbox;
-  -moz-appearance: checkbox;
-  appearance: checkbox;
+     -moz-appearance: checkbox;
+          appearance: checkbox;
 }
 
 button {
   -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   border-radius: 0;
 }
 
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-input[type="file"] {
+input[type=button],
+input[type=submit],
+input[type=reset],
+input[type=file] {
   -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   border-radius: 0;
 }
 
-input[type="search"]::-webkit-search-cancel-button {
+input[type=search]::-webkit-search-cancel-button {
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
 }
 
 /* 기본 폰트 설정 */
@@ -198,7 +195,7 @@ hr {
   display: none;
 }
 
-input[type="password"] {
+input[type=password] {
   font-family: "Malgun Gothic";
 }
 
@@ -338,7 +335,7 @@ legend {
   display: block;
   width: 200px;
   height: 60px;
-  background: url(../../images/comm/LOGO-MAIN.png) 0 50% / contain no-repeat;
+  background: url(../../images/comm/LOGO-MAIN.png) 0 50%/contain no-repeat;
   text-indent: -9999px;
 }
 
@@ -452,11 +449,7 @@ legend {
   margin: 0 auto 20px;
   background: #35353d;
 }
-.footer_first-wrap
-  .ft_company
-  .ft_company-ul
-  .ft_company-li
-  .ft_company-icon:hover {
+.footer_first-wrap .ft_company .ft_company-ul .ft_company-li .ft_company-icon:hover {
   background: #0062cc;
 }
 .footer_first-wrap .ft_company .ft_company-ul .ft_company-li span {
@@ -646,8 +639,7 @@ legend {
   align-items: stretch;
   justify-content: center;
   align-items: flex-start;
-  background: url(../../images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px
-    380px/95% 40%;
+  background: url(../../images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px 380px/95% 40%;
 }
 
 .slider_left {
@@ -682,7 +674,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   animation: rotate_image 6s linear infinite;
 }
 .slider_right .slide-img::before {
@@ -912,7 +904,7 @@ legend {
   height: 100%;
   border-radius: 50px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   transition: 0.5s;
 }
 .eventcontent .eventcontent-txt {
@@ -1070,7 +1062,7 @@ legend {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .prebx-capsule-text {
@@ -1208,7 +1200,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .ad_kt4 .ad_kt4_img .tablet_img {
   display: none;
@@ -1279,7 +1271,7 @@ legend {
   height: 100%;
   border-radius: 80px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   transition: transform 0.3s;
 }
 
@@ -1384,7 +1376,7 @@ legend {
   display: block;
   width: 225px;
   height: 25px;
-  background: url(../../images/main/chart.svg) no-repeat 0 0 / cover;
+  background: url(../../images/main/chart.svg) no-repeat 0 0/cover;
 }
 
 .chart-right {
@@ -1435,7 +1427,7 @@ legend {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .chart_capsule-wrap .chartbx_capsule-text {
   height: 60%;
@@ -1593,14 +1585,14 @@ legend {
   border-radius: 10px;
   border: 1px solid #eeeeee;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
 }
 .chart_4-add .chart_4-add-images-wrap .chart_4-add-images img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .chart_4-add .chart_4-add-contents {
   width: 100%;
@@ -1692,12 +1684,7 @@ legend {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    -225deg,
-    rgba(93, 159, 255, 0.5) 0%,
-    rgba(184, 220, 255, 0.5) 48%,
-    rgba(107, 187, 255, 0.5) 100%
-  );
+  background-image: linear-gradient(-225deg, rgba(93, 159, 255, 0.5) 0%, rgba(184, 220, 255, 0.5) 48%, rgba(107, 187, 255, 0.5) 100%);
 }
 .ktown4u_offline .offline-text span {
   margin-bottom: 10px;
@@ -1759,7 +1746,7 @@ legend {
   height: 100%;
   border-radius: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   z-index: 1;
   transition: all 0.3s;
 }
@@ -1785,8 +1772,7 @@ legend {
     margin: 0 auto;
   }
   .container.is-slider .slider_wrap {
-    background: url(../../images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px
-      380px/95% 40%;
+    background: url(../../images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px 380px/95% 40%;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -1795,8 +1781,7 @@ legend {
     margin: 0 auto;
   }
   .container.is-slider .slider_wrap {
-    background: url(../../images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px
-      310px/95% 40%;
+    background: url(../../images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px 310px/95% 40%;
   }
   .preorder-right {
     width: 85%;
@@ -1812,7 +1797,7 @@ legend {
   }
   .ad_kt4 .ad_kt4_img img {
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   .chart_4-add .chart_4-add-contents .chart_4-add-album {
     width: 200px;
@@ -1887,8 +1872,7 @@ legend {
     padding: 0 30px;
   }
   .container.is-slider .slider_wrap {
-    background: url(../../images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px
-      280px/95% 40%;
+    background: url(../../images/main/ktown4u_eng_logo_gray.svg) no-repeat 30px 280px/95% 40%;
   }
   .swiper-arrow-main {
     top: 360px;
@@ -2003,7 +1987,7 @@ legend {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   .new_life {
     padding: 80px 30px;
@@ -2123,7 +2107,7 @@ legend {
     width: 100%;
     height: auto;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2282,7 +2266,7 @@ legend {
     border-radius: 10px;
     border: 1px solid #eeeeee;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     overflow: hidden;
     box-shadow: none;
   }
@@ -2485,7 +2469,7 @@ legend {
   height: 100%;
   border-radius: 40px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .itemview-left .artist_goto .artist_goto-wrap {
   display: flex;
@@ -2510,7 +2494,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .itemview-left .artist_goto .artist_goto-wrap .artist_goto-text {
   margin-left: 30px;
@@ -2615,26 +2599,14 @@ legend {
   border: 1px solid #eee;
   border-radius: 50px;
 }
-.itemview-right
-  .count-wrap
-  .count-left
-  .count_button-wrap
-  input[type="number"] {
+.itemview-right .count-wrap .count-left .count_button-wrap input[type=number] {
   width: 50px;
   text-align: center;
   font-size: 20px;
   border: none;
 }
-.itemview-right
-  .count-wrap
-  .count-left
-  .count_button-wrap
-  input[type="number"]::-webkit-outer-spin-button,
-.itemview-right
-  .count-wrap
-  .count-left
-  .count_button-wrap
-  input[type="number"]::-webkit-inner-spin-button {
+.itemview-right .count-wrap .count-left .count_button-wrap input[type=number]::-webkit-outer-spin-button,
+.itemview-right .count-wrap .count-left .count_button-wrap input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -2718,7 +2690,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 .kt4_associate-wrap .kt4_associate-text {
   font-weight: 700;
@@ -2926,4 +2898,4 @@ legend {
 
 .cs_main-middle {
   width: 100%;
-} /*# sourceMappingURL=comm.css.map */
+}/*# sourceMappingURL=comm.css.map */
