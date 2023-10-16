@@ -13,8 +13,8 @@
   position: relative;
   width: 50%;
   .itemalbum-images {
-    width: 640px;
-    height: 640px;
+    width: 100%;
+    aspect-ratio: 1/1;
     border-radius: 40px;
     border: 1px solid $gray-d;
     overflow: hidden;
@@ -50,10 +50,10 @@
         }
       }
       .artist_goto-text {
+        width: 510px;
         margin-left: 30px;
       }
       .artist_goto-arrow {
-        margin-left: 280px;
         color: $gray-9;
       }
     }
@@ -327,44 +327,40 @@
     }
   }
   .kt4_packing {
+    width: 100%;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .itemview-left .itemalbum-images {
-    width: 600px;
-    height: 600px;
-  }
-  .itemview-left .artist_goto .artist_goto-wrap .artist_goto-text {
-    width: 250px;
-  }
-  .itemview-left .artist_goto .artist_goto-wrap .artist_goto-arrow {
-    margin-left: 220px;
-  }
+  // .itemview-left .itemalbum-images {
+  //   width: 600px;
+  //   height: 600px;
+  // }
+  //   .itemview-left .artist_goto .artist_goto-wrap .artist_goto-text {
+  //     width: 250px;
+  //   }
+  //   .itemview-left .artist_goto .artist_goto-wrap .artist_goto-arrow {
+  //     margin-left: 220px;
+  //   }
 }
 
 @media screen and (max-width: 1440px) {
-  .itemview-left .itemalbum-images {
-    width: 550px;
-    height: 550px;
-  }
-  .itemview-left .artist_goto .artist_goto-wrap .artist_goto-arrow {
-    margin-left: 180px;
+  .itemview-left .artist_goto .artist_goto-wrap .artist_goto-text {
+    width: 420px;
   }
 }
 @media screen and (max-width: 1280px) {
   .item_view {
     padding: 80px 50px;
   }
+  .itemview-left .artist_goto .artist_goto-wrap .artist_goto-text {
+    width: 460px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .item_view {
     padding: 0 30px;
-  }
-  .itemview-left .itemalbum-images {
-    width: 480px;
-    height: 480px;
   }
   .itemview-right .info-tit .info-title .info-album {
     font-size: 18px;
@@ -389,9 +385,6 @@
   }
   .itemview-right .product_info_down .kt4_info-total-price {
     padding: 20px 0 70px 0;
-  }
-  .itemview-left .artist_goto .artist_goto-wrap {
-    height: 50px;
   }
   .itemview-left .artist_goto .artist_goto-wrap .artist_goto-text {
     width: 360px;
@@ -436,12 +429,11 @@
   .itemview-right {
     width: auto;
   }
+  .itemview-right .info-details .info-detail-tit {
+    margin-right: 0px;
+  }
   .artist_goto {
     display: none;
-  }
-  .itemview-left .itemalbum-images {
-    width: 708px;
-    height: 708px;
   }
   .kt4_associate-wrap .kt4_associate-image {
     width: 80%;
@@ -453,7 +445,89 @@
     white-space: initial;
   }
   .kt4_all_info-wrap .kt4_delivery_information {
-    height: auto; 
+    height: auto;
+    padding: 20px 55px;
+  }
+
+  .info-wrap {
+    padding: 0;
+    border-radius: 0;
+    border: 0px solid #000;
+    padding: 60px 0;
+    border-top: 2px solid $gray-e;
+    border-bottom: 2px solid $gray-e;
+  }
+  .album_details_images {
+    width: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .kt4_cont-wrap .kt4_cont {
+    border-top: 0px;
+    padding-top: 0;
+  }
+
+  .kt4_cont-wrap .kt4_packing {
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .itemview-right .info-tit .info-title .info-album {
+    font-size: 16px;
+  }
+  .itemview-right .info-price .discount_rate,
+  .itemview-right .info-price .final_price {
+    font-size: 20px;
+  }
+  .itemview-right .info-price .price_origin {
+    font-size: 15px;
+  }
+  .itemview-right
+    .count-wrap
+    .count-left
+    .count_button-wrap
+    input[type="number"] {
+    font-size: 16px;
+  }
+  .itemview-right .count-right {
+    font-size: 16px;
+  }
+  .itemview-right .product_info_down .kt4_info-total-price {
+    font-size: 18px;
+  }
+  .itemview-right
+    .product_info_down
+    .kt4_info-total-price
+    .kt4_info-price
+    .val {
+    font-size: 20px;
+  }
+  .itemview-right
+    .product_info_down
+    .kt4_info-total-price
+    .kt4_info-price
+    .unit {
+    font-size: 16px;
+  }
+  .itemview-right .product_info_down .kt4_product_btn_area .kt4_button {
+    line-height: 50px;
+    font-size: 18px;
+  }
+  .kt4_associate-wrap .kt4_associate-image {
+    width: 100%;
+  }
+  .kt4_associate-wrap .kt4_associate-text {
+    font-size: 14px;
+  }
+  .kt4_all_info-wrap .kt4_delivery_information {
+    padding: 20px;
   }
 }
 
